@@ -38,84 +38,89 @@
     <section class="plan">
       <h2 class="visually-hidden">Анкета</h2>
       <form class="plan__form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="plan__fieldset">
+        <fieldset class="plan__group">
           <legend class="visually-hidden">Данные кота</legend>
-          <p class="plan__item">
-            <label class="plan__label" for="plan-name">Имя:*</label>
-            <input class="plan__input plan__input--text" id="plan-name" type="text" name="name" placeholder="Барсик">
-          </p>
-          <p class="plan__item">
-            <label class="plan__label" for="plan-weight">Вес (кг):*</label>
-            <input class="plan__input plan__input--number" id="plan-weight" type="number" name="weight" placeholder="7">
-          </p>
-          <p class="plan__item">
-            <label class="plan__label" for="plan-age">Возраст (лет):</label>
-            <input class="plan__input plan__input--number" id="plan-age" type="number" name="age" placeholder="7">
-          </p>
+          <ul class="plan__list" role="none">
+            <li class="plan__item">
+              <label class="plan__label" for="plan-name">Имя:*</label>
+              <input class="plan__input plan__input--text" id="plan-name" type="text" name="name" placeholder="Барсик">
+            </li>
+            <li class="plan__item">
+              <label class="plan__label" for="plan-weight">Вес (кг):*</label>
+              <input class="plan__input plan__input--number" id="plan-weight" type="number" name="weight" placeholder="7">
+            </li>
+            <li class="plan__item">
+              <label class="plan__label" for="plan-age">Возраст (лет):</label>
+              <input class="plan__input plan__input--number" id="plan-age" type="number" name="age" placeholder="7">
+            </li>
+          </ul>
         </fieldset>
 
-        <fieldset class="plan__fieldset">
+        <fieldset class="plan__group">
           <legend class="visually-hidden">Вариант режима питания</legend>
-          <p class="plan__item">
-            <input class="plan__input plan__input--radio" id="plan-slim" type="radio" name="diet" value="slim" checked>
-            <span class="plan__radio"></span>
-            <label class="plan__label" for="plan-slim">Похудение</label>
-          </p>
-          <p class="plan__item">
-            <input class="plan__input plan__input--radio" id="plan-pro" type="radio" name="diet" value="pro">
-            <span class="plan__radio"></span>
-            <label class="plan__label" for="plan-pro">Набор массы</label>
-          </p>
-          <p class="plan__item">
-            <input class="plan__input plan__input--radio" id="plan-advice" type="radio" name="diet" value="advice">
-            <span class="plan__radio"></span>
-            <label class="plan__label" for="plan-advice">Не знаю (Нужен ваш совет)</label>
-          </p>
+          <ul class="plan__list" role="none">
+            <li class="plan__item">
+              <input class="plan__radio" id="plan-slim" type="radio" name="diet" value="slim" checked>
+              <span class="plan__custom-radio"></span>
+              <label class="plan__label" for="plan-slim">Похудение</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__radio" id="plan-pro" type="radio" name="diet" value="pro">
+              <span class="plan__custom-radio"></span>
+              <label class="plan__label" for="plan-pro">Набор массы</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__radio" id="plan-advice" type="radio" name="diet" value="advice">
+              <span class="plan__custom-radio"></span>
+              <label class="plan__label" for="plan-advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
         </fieldset>
 
-        <fieldset class="plan__fieldset">
-          <legend class="plan__legend">Контактные данные (владельца кота)</legend>
-          <p class="plan__item">
-            <label class="plan__label" for="plan-email">E-mail:*</label>
-            <input class="plan__input plan__input--email" id="plan-email" type="email" name="email" placeholder="kuklachev@gmail.com">
-          </p>
-          <p class="plan__item">
-            <label class="plan__label" for="plan-tel">Телефон:*</label>
-            <input class="plan__input plan__input--tel" id="plan-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
-          </p>
+        <fieldset class="plan__group">
+          <legend class="plan__group-title">Контактные данные (владельца кота)</legend>
+          <ul class="plan__list" role="none">
+            <li class="plan__item">
+              <label class="plan__label" for="plan-email">E-mail:*</label>
+              <input class="plan__input plan__input--email" id="plan-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </li>
+            <li class="plan__item">
+              <label class="plan__label" for="plan-tel">Телефон:*</label>
+              <input class="plan__input plan__input--tel" id="plan-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+            </li>
+          </ul>
         </fieldset>
 
-        <fieldset class="plan__fieldset">
-          <legend class="plan__legend">Комментарий</legend>
-          <p class="plan__item">
-            <label class="visually-hidden" for="plan-message">Ваш комментарий к заявке</label>
-            <textarea class="plan__textarea" id="plan-message" name="message" placeholder="Расскажите обо всех повадках кота">
+        <div class="plan__group">
+          <label class="plan__group-title" for="plan-message">Комментарий</label>
+          <textarea class="plan__textarea" id="plan-message" name="message" placeholder="Расскажите обо всех повадках кота">
             </textarea>
-          </p>
-        </fieldset>
+        </div>
 
-        <fieldset class="plan__fieldset">
-          <legend class="plan__legend">Дополнительно</legend>
-          <p class="plan__item">
-            <input class="plan__input plan__input--checkbox" id="plan-sugar" type="checkbox" name="sugar" checked>
-            <span class="plan__checkbox"></span>
-            <label class="plan__label" for="plan-sugar">Сахарозаменитель</label>
-          </p>
-          <p class="plan__item">
-            <input class="plan__input plan__input--checkbox" id="plan-water" type="checkbox" name="water">
-            <span class="plan__checkbox"></span>
-            <label class="plan__label" for="plan-water">Питьевая вода</label>
-          </p>
-          <p class="plan__item">
-            <input class="plan__input plan__input--checkbox" id="plan-milk" type="checkbox" name="milk">
-            <span class="plan__checkbox"></span>
-            <label class="plan__label" for="plan-milk">Молоко</label>
-          </p>
-          <p class="plan__item">
-            <input class="plan__input plan__input--checkbox" id="plan-vitamins" type="checkbox" name="vitamins">
-            <span class="plan__checkbox"></span>
-            <label class="plan__label" for="plan-vitamins">Витамины</label>
-          </p>
+        <fieldset class="plan__group">
+          <legend class="plan__group-title">Дополнительно</legend>
+          <ul class="plan__list" role="none">
+            <li class="plan__item">
+              <input class="plan__checkbox" id="plan-sugar" type="checkbox" name="sugar" checked>
+              <span class="plan__custom-checkbox"></span>
+              <label class="plan__label" for="plan-sugar">Сахарозаменитель</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__checkbox" id="plan-water" type="checkbox" name="water">
+              <span class="plan__custom-checkbox"></span>
+              <label class="plan__label" for="plan-water">Питьевая вода</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__checkbox" id="plan-milk" type="checkbox" name="milk">
+              <span class="plan__custom-checkbox"></span>
+              <label class="plan__label" for="plan-milk">Молоко</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__checkbox" id="plan-vitamins" type="checkbox" name="vitamins">
+              <span class="plan__custom-checkbox"></span>
+              <label class="plan__label" for="plan-vitamins">Витамины</label>
+            </li>
+          </ul>
         </fieldset>
 
         <button class="plan__submit button" type="submit">Отправить заявку</button>
