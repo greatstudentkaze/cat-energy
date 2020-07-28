@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Подбор программы — Кэт энерджи</title>
+</head>
+<body class="page__body">
+
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип «Кэт энерджи»">
+    </a>
+    <a class="page-header__text-logo" href="index.html">
+      <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="Текстовый логотип «Кэт энерджи»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item site-list__item--current">
+          <a>Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__instruction">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+    <section class="plan">
+      <h2 class="visually-hidden">Анкета</h2>
+      <form class="plan__form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="plan__group">
+          <legend class="visually-hidden">Данные кота</legend>
+          <ul class="plan__list" role="none">
+            <li class="plan__item">
+              <label class="plan__label" for="plan-name">Имя:*</label>
+              <input class="plan__input plan__input--text" id="plan-name" type="text" name="name" placeholder="Барсик">
+            </li>
+            <li class="plan__item">
+              <label class="plan__label" for="plan-weight">Вес (кг):*</label>
+              <input class="plan__input plan__input--number" id="plan-weight" type="number" name="weight" placeholder="7">
+            </li>
+            <li class="plan__item">
+              <label class="plan__label" for="plan-age">Возраст (лет):</label>
+              <input class="plan__input plan__input--number" id="plan-age" type="number" name="age" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="plan__group">
+          <legend class="visually-hidden">Вариант режима питания</legend>
+          <ul class="plan__list" role="none">
+            <li class="plan__item">
+              <input class="plan__radio" id="plan-slim" type="radio" name="diet" value="slim" checked>
+              <span class="plan__custom-radio"></span>
+              <label class="plan__label" for="plan-slim">Похудение</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__radio" id="plan-pro" type="radio" name="diet" value="pro">
+              <span class="plan__custom-radio"></span>
+              <label class="plan__label" for="plan-pro">Набор массы</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__radio" id="plan-advice" type="radio" name="diet" value="advice">
+              <span class="plan__custom-radio"></span>
+              <label class="plan__label" for="plan-advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="plan__group">
+          <legend class="plan__group-title">Контактные данные (владельца кота)</legend>
+          <ul class="plan__list" role="none">
+            <li class="plan__item">
+              <label class="plan__label" for="plan-email">E-mail:*</label>
+              <input class="plan__input plan__input--email" id="plan-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </li>
+            <li class="plan__item">
+              <label class="plan__label" for="plan-tel">Телефон:*</label>
+              <input class="plan__input plan__input--tel" id="plan-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="plan__group">
+          <label class="plan__group-title" for="plan-message">Комментарий</label>
+          <textarea class="plan__textarea" id="plan-message" name="message" placeholder="Расскажите обо всех повадках кота">
+            </textarea>
+        </div>
+
+        <fieldset class="plan__group">
+          <legend class="plan__group-title">Дополнительно</legend>
+          <ul class="plan__list" role="none">
+            <li class="plan__item">
+              <input class="plan__checkbox" id="plan-sugar" type="checkbox" name="sugar" checked>
+              <span class="plan__custom-checkbox"></span>
+              <label class="plan__label" for="plan-sugar">Сахарозаменитель</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__checkbox" id="plan-water" type="checkbox" name="water">
+              <span class="plan__custom-checkbox"></span>
+              <label class="plan__label" for="plan-water">Питьевая вода</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__checkbox" id="plan-milk" type="checkbox" name="milk">
+              <span class="plan__custom-checkbox"></span>
+              <label class="plan__label" for="plan-milk">Молоко</label>
+            </li>
+            <li class="plan__item">
+              <input class="plan__checkbox" id="plan-vitamins" type="checkbox" name="vitamins">
+              <span class="plan__custom-checkbox"></span>
+              <label class="plan__label" for="plan-vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="plan__submit button" type="submit">Отправить заявку</button>
+        <small class="plan__legend">* — Обязательные поля</small>
+      </form>
+    </section>
+
+    <section class="map">
+      <h2 class="visually-hidden">Как нас найти?</h2>
+      <div class="map__description">
+        <p class="map__info">приглашаем к сотрудничеству дилеров!</p>
+        <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="map__wrapper">
+        <img class="map__image" src="https://via.placeholder.com/150x150" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo text-logo" href="index.html">
+        <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Cat Energy">
+      </a>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              Мы в Вконтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              Мы в Инстаграме
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              Мы в Фейсбуке
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+        <!--        svg_logo-->
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
