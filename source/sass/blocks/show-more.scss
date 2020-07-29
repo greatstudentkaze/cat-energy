@@ -1,0 +1,31 @@
+.show-more {
+  padding: 53px 20px 25px;
+
+  background-color: $color-white;
+}
+
+.show-more__title {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.show-more__desc {
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $color-dark-gray;
+  text-align: center;
+}
+
+//.show-more__link {}
