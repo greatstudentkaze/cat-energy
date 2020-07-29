@@ -1,0 +1,35 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  a {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $color-black;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--current {
+    a {
+      position: relative;
+    }
+  }
+}
+

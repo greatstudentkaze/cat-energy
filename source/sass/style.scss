@@ -1,1 +1,9 @@
-// Начните писать стили здесь
+@import "fonts";
+@import "variables";
+@import "base";
+@import "blocks/page";
+
+@import "blocks/page-header";
+
+@import "blocks/main-nav";
+@import "blocks/site-list";
