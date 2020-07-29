@@ -28,8 +28,11 @@
 }
 
 .product__image {
-  width: 140px;
-  height: 112px;
+  img {
+    max-width: 140px;
+    max-height: 112px;
+    object-fit: cover;
+  }
 }
 
 //.product__link {}
