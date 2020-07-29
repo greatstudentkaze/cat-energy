@@ -9,9 +9,14 @@
 }
 
 .page-footer__logo {
-  width: 128px;
-  height: 24px;
+  display: block;
   margin-bottom: 32px;
+
+  img {
+    display: block;
+    width: 128px;
+    height: 24px;
+  }
 }
 
 .page-footer__social {

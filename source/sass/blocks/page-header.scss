@@ -5,10 +5,15 @@
 }
 
 .page-header__logo {
-  width: 191px;
-  height: 38px;
+  display: block;
 
   cursor: pointer;
+
+  img {
+    display: block;
+    width: 191px;
+    height: 38px;
+  }
 
   &:hover,
   &:focus {
