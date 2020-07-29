@@ -1,0 +1,21 @@
+.page-footer {
+  background: $color-gray;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 39px 20px 22px;
+}
+
+.page-footer__logo {
+  width: 128px;
+  height: 24px;
+  margin-bottom: 32px;
+}
+
+.page-footer__social {
+  margin-bottom: 21px;
+}
+
+//.page-footer__copyright {}
