@@ -1,0 +1,37 @@
+.diet {
+  padding: 30px 20px 18px;
+
+  background-color: $color-gray;
+
+  //&--slim {}
+  //&--pro {}
+}
+
+.diet__title {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.diet__description {
+  max-width: 227px;
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-dark-gray;
+}
+
+.diet__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-black;
+  text-transform: uppercase;
+}

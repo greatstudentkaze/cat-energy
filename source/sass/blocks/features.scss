@@ -1,0 +1,24 @@
+.features {
+  padding: 0 20px 42px;
+}
+
+.features__title {
+  margin-bottom: 38px;
+}
+
+.features__list {
+  @include reset-list;
+}
+
+.features__item {
+  margin-bottom: 20px;
+
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-dark-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

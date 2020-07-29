@@ -1,0 +1,15 @@
+.catalog {
+  padding: 8px 0 11px;
+}
+
+.catalog__list {
+  @include reset-list;
+}
+
+.catalog__item {
+  margin-bottom: 19px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

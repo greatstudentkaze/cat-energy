@@ -1,0 +1,41 @@
+.product {
+  padding: 11px 18px 14px 20px;
+
+  background-color: $color-white;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 18px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #222222;
+}
+
+.product__title-link {
+  color: #222222;
+}
+
+.product__parameters {
+  width: 142px;
+
+  font-family: $font-secondary;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-dark-gray;
+}
+
+.product__image {
+  display: block;
+
+  img {
+    display: block;
+    width: 140px;
+    height: 112px;
+    object-fit: cover;
+  }
+}
+
+//.product__link {}

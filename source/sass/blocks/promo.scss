@@ -1,0 +1,58 @@
+.promo {
+  position: relative;
+
+  padding: 27px 20px 0 20px;
+
+  color: $color-white;
+  text-align: center;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    display: block;
+    width: 100%;
+    height: 305px;
+
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $color-green;
+  }
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3px;
+
+  img {
+    display: block;
+    width: 280px;
+    height: 270px;
+  }
+}
+
+//.promo__link {}
