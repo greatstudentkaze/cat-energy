@@ -1,0 +1,27 @@
+.features {
+  padding: 0 20px 42px;
+}
+
+.features__title {
+  margin-bottom: 38px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  margin-bottom: 20px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-dark-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
