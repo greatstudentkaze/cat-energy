@@ -3,9 +3,13 @@
 @import "base";
 @import "blocks/page";
 
+// header
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/site-list";
 
+// main
 @import "blocks/page-main";
 @import "blocks/promo";
+@import "blocks/diets";
+@import "blocks/diet";
