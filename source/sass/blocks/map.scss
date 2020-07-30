@@ -1,0 +1,36 @@
+.map {}
+
+.map__description {
+  display: flex;
+  padding: 28px 19px 22px;
+}
+
+.map__info {
+  flex-basis: 50%;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.map__address {
+  flex-basis: 50%;
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-dark-gray;
+}
+
+.map__wrapper {}
+
+.map__image {
+  display: block;
+  width: 320px;
+  height: 362px;
+
+  object-fit: cover;
+}
