@@ -1,0 +1,26 @@
+.related {
+  padding: 28px 20px 35px;
+}
+
+.related__title {
+  margin-bottom: 35px;
+}
+
+.related__catalog {
+  @include reset-list;
+
+  margin-bottom: 39px;
+}
+
+.related__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+//.related__gift {}
