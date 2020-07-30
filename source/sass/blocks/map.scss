@@ -1,5 +1,9 @@
 .map {
   background-color: $color-gray;
+
+  &--index {
+    background-color: $color-white;
+  }
 }
 
 .map__description {
