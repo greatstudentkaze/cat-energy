@@ -1,0 +1,37 @@
+.related-product {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  border-top: 1px solid #cdcdcd;
+}
+
+.related-product__title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.related-product__desc {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-dark-gray;
+}
+
+//.related-product__amount {}
+
+//.related-product__price {}
+
+.related-product__link {
+  width: 100%;
+}
