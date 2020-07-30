@@ -1,4 +1,6 @@
-.map {}
+.map {
+  background-color: #f2f2f2;
+}
 
 .map__description {
   display: flex;
@@ -25,7 +27,7 @@
   color: $color-dark-gray;
 }
 
-.map__wrapper {}
+//.map__wrapper {}
 
 .map__image {
   display: block;
