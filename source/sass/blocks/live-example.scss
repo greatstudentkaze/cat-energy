@@ -1,7 +1,13 @@
 .live-example {
-  padding: 27px 21px 25px 20px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 
   background-color: #eaeaea;
+}
+
+.live-example__wrapper {
+  padding-right: 21px;
+  padding-left: 20px;
 }
 
 .live-example__title {
@@ -60,4 +66,4 @@
   color: $color-black;
 }
 
-.live-example__slider {}
+//.live-example__slider {}
