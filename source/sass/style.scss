@@ -1,13 +1,15 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/normalize.css/normalize";
 @import "fonts";
 @import "variables";
 @import "mixins";
 @import "base";
 @import "blocks/page";
 @import "blocks/title";
+@import "blocks/title-special";
 @import "blocks/button";
 @import "blocks/page-header";
 @import "blocks/page-main";
+@import "blocks/map";
 @import "blocks/page-footer";
 @import "blocks/social";
 @import "blocks/copyright";
@@ -19,10 +21,16 @@
 @import "blocks/diets";
 @import "blocks/diet";
 @import "blocks/features";
+@import "blocks/live-example";
+@import "blocks/slider";
 
 // "Каталог"
 @import "blocks/catalog";
 @import "blocks/product";
 @import "blocks/show-more";
+@import "blocks/related";
+@import "blocks/related-product";
+@import "blocks/gift";
 
 // "Подбор программы"
+@import "blocks/plan";
