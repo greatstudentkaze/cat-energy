@@ -1,5 +1,20 @@
 .features {
   padding: 0 20px 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+    padding: 0 30px;
+    padding-right: 109px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    margin-bottom: 11px;
+    padding: 0 20px;
+  }
 }
 
 .features__title {
@@ -8,6 +23,15 @@
 
 .features__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 37px;
+  }
+
+  //@media (min-width: $desktop-width) {}
 }
 
 .features__item {
@@ -21,4 +45,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 250px;
+    margin-bottom: 0;
+  }
+
+  //@media (min-width: $desktop-width) {}
 }
