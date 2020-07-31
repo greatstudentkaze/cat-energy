@@ -12,8 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px 80px;
-    width: 1240px;
-    margin: 0 auto;
+    width: $desktop-width;
     margin-bottom: 71px;
     padding: 0 20px;
   }
