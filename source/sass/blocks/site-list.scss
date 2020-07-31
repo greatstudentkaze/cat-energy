@@ -1,8 +1,24 @@
 .site-list {
   @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+    padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
 
 .site-list__item {
+  text-align: center;
+
   a {
     font-size: 20px;
     line-height: 20px;

@@ -2,6 +2,23 @@
   padding: 20px;
   padding-top: 12px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    padding: 0 30px;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+    margin-bottom: 111px;
+    padding: 0 20px;
+    padding-top: 53px;
+  }
 }
 
 .page-header__logo {
