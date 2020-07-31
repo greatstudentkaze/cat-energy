@@ -1,9 +1,27 @@
 //.page-main {}
 
-.page-main__title {
-  margin: 0;
+.page-main__info {
   margin-top: 27px;
   margin-bottom: 37px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    margin-bottom: 84px;
+    padding: 0 20px;
+  }
+}
+
+.page-main__title {
+  margin: 0;
 
   font-size: 36px;
   line-height: 36px;
