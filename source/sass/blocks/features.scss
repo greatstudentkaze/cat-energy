@@ -1,16 +1,16 @@
 .features {
-  padding: 0 20px 42px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
     margin-bottom: 47px;
-    padding: 0 30px;
     padding-right: 109px;
   }
 
+  @media (min-width: 889px) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
     margin-bottom: 11px;
     padding: 0 20px;
   }
@@ -50,5 +50,11 @@
     margin-bottom: 0;
   }
 
-  //@media (min-width: $desktop-width) {}
+  @media (min-width: 889px) {
+    flex-basis: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 250px;
+  }
 }

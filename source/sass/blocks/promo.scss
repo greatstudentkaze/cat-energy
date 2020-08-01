@@ -1,7 +1,7 @@
 .promo {
   position: relative;
 
-  padding: 27px 20px 0 20px;
+  padding-top: 27px;
 
   color: $color-white;
   text-align: center;
@@ -34,22 +34,19 @@
       left: auto;
       display: none;
       width: 720px;
-      min-height: 696px;
+      height: 696px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
     padding: 0 29px;
 
     color: $color-black;
   }
 
   @media (min-width: $desktop-width) {
-    position: unset;
+    position: static;
 
-    width: 1200px;
     margin-bottom: 82px;
     padding: 0 80px;
 
