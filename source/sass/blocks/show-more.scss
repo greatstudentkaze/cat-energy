@@ -2,6 +2,14 @@
   padding: 53px 20px 25px;
 
   background-color: $color-white;
+
+  //@media (min-width: 992px) {
+  //  grid-column: -3 / -1;
+  //}
+
+  //@media (min-width: $desktop-width) {
+  //  grid-column: -2 / -1;
+  //}
 }
 
 .show-more__title {
