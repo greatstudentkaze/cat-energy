@@ -1,7 +1,7 @@
 .promo {
   position: relative;
 
-  padding: 27px 20px 0 20px;
+  padding-top: 27px;
 
   color: $color-white;
   text-align: center;
@@ -23,6 +23,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $color-green;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      right: 0;
+      left: auto;
+      display: none;
+      width: 720px;
+      height: 696px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 29px;
+
+    color: $color-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+
+    margin-bottom: 82px;
+    padding: 0 80px;
+
+    text-align: left;
   }
 }
 
@@ -33,6 +61,10 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
+
+  @media (min-width: $desktop-width) {
+    max-width: 420px;
+  }
 }
 
 .promo__text {

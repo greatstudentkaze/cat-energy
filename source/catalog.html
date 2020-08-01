@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог продукции — Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header container">
     <a class="page-header__logo" href="index.html">
       <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип «Кэт энерджи»">
     </a>
@@ -30,9 +31,11 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
+    <div class="page-main__info container">
+      <h1 class="page-main__title">Каталог продукции</h1>
+    </div>
 
-    <section class="catalog">
+    <section class="catalog container">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -210,13 +213,12 @@
             <a class="product__link button" href="catalog-item.html">Заказать</a>
           </article>
         </li>
+        <li class="show-more">
+          <h3 class="show-more__title">Показать еще 100500 товаров</h3>
+          <p class="show-more__desc">На самом деле вкусов гораздо больше!</p>
+          <a class="show-more__link button button--gray" href="all-products.html">Показать все</a>
+        </li>
       </ul>
-
-      <div class="show-more">
-        <h3 class="show-more__title">Показать еще 100500 товаров</h3>
-        <p class="show-more__desc">На самом деле вкусов гораздо больше!</p>
-        <a class="show-more__link button button--gray" href="all-products.html">Показать все</a>
-      </div>
     </section>
 
     <section class="related">
@@ -286,7 +288,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo" href="index.html">
         <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </a>

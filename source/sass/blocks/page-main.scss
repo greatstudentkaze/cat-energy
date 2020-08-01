@@ -1,9 +1,21 @@
 //.page-main {}
 
-.page-main__title {
-  margin: 0;
+.page-main__info {
   margin-top: 27px;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
+}
+
+.page-main__title {
+  margin: 0;
 
   font-size: 36px;
   line-height: 36px;
