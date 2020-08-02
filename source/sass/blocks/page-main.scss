@@ -2,15 +2,11 @@
 
 .page-main__info {
   margin-top: 27px;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-bottom: 83px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
+    margin-bottom: 0;
   }
 }
 
@@ -25,7 +21,6 @@
 
 .page-main__instruction {
   margin: 0;
-  margin-bottom: 39px;
   max-width: 230px;
 
   font-size: 14px;
