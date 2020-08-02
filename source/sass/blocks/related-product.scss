@@ -3,6 +3,13 @@
   padding-bottom: 19px;
 
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .related-product__title {
@@ -26,6 +33,15 @@
   font-size: 14px;
   line-height: 14px;
   color: $color-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 226px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 286px;
+  }
 }
 
 //.related-product__amount {}
@@ -34,4 +50,13 @@
 
 .related-product__link {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 244px;
+    margin-left: 40px;
+  }
 }
