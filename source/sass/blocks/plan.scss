@@ -1,7 +1,13 @@
 .plan {
-  padding-right: 20px;
   padding-bottom: 32px;
-  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+  }
 }
 
 //.plan__form {}
@@ -21,29 +27,29 @@
     //border-top: 1px solid #d9d9d9;
     //border-bottom: 1px solid #d9d9d9;
 
-    &::before {
-      content: "";
+    //&::before {
+    //  content: "";
+    //
+    //  position: absolute;
+    //  top: 0;
+    //  left: -20px;
+    //
+    //  width: 320px;
+    //
+    //  border-top: 1px solid #d9d9d9;
+    //}
 
-      position: absolute;
-      top: 0;
-      left: -20px;
-
-      width: 320px;
-
-      border-top: 1px solid #d9d9d9;
-    }
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      bottom: 0;
-      left: -20px;
-
-      width: 320px;
-
-      border-top: 1px solid #d9d9d9;
-    }
+    //&::after {
+    //  content: "";
+    //
+    //  position: absolute;
+    //  bottom: 0;
+    //  left: -20px;
+    //
+    //  width: 320px;
+    //
+    //  border-top: 1px solid #d9d9d9;
+    //}
   }
 }
 
@@ -57,10 +63,65 @@
 
 .plan__list {
   @include reset-list;
+
+  &--checkboxes {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 688px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 1220px;
+      margin-bottom: 61px;
+    }
+  }
+}
+
+.plan__columns {
+  display: grid;
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 282px 180px;
+      gap: 30px 60px;
+      align-items: center;
+    }
+  }
+
+  &--padding {
+    @media (min-width: $desktop-width) {
+      padding-top: 66px;
+      padding-bottom: 69px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 80px;
+    align-items: center;
+  }
 }
 
 .plan__item {
   margin-bottom: 13px;
+
+  .plan__list--checkboxes & {
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      flex-basis: 221px;
+      margin-right: 123px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 104px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .plan__label {
@@ -131,6 +192,10 @@
 .plan__submit {
   width: 100%;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .plan__legend {
@@ -141,4 +206,9 @@
   line-height: 16px;
   color: $color-black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    text-align: left;
+  }
 }

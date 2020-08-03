@@ -1,14 +1,44 @@
 .map {
+  position: relative;
   background-color: $color-gray;
 
   &--index {
     background-color: $color-white;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+    padding-bottom: 104px;
+  }
 }
 
 .map__description {
   display: flex;
-  padding: 28px 19px 22px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-right: 72px;
+    padding-bottom: 51px;
+    padding-left: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+
+    max-width: 570px;
+    padding-top: 66px;
+    padding-right: 89px;
+    padding-bottom: 51px;
+    padding-left: 76px;
+    height: 201px; // todo добиться такой же паддингами и контентом
+
+    background-color: $color-white;
+  }
 }
 
 .map__info {
@@ -19,6 +49,13 @@
   line-height: 18px;
   color: $color-black-special;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 171px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .map__address {
@@ -29,14 +66,34 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    max-width: 159px;
+
+    text-align: right;
+  }
 }
 
-//.map__wrapper {}
+.map__wrapper {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 400px;
+  }
+}
 
 .map__image {
   display: block;
-  width: 320px;
-  height: 362px;
-
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
