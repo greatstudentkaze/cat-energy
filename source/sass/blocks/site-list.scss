@@ -4,6 +4,12 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: $mobile-width-only) {
+    display: none;
+    // делает рамки на всю ширину
+    margin: 0 -20px;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -27,21 +33,76 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    cursor: pointer;
+    @media (max-width: $mobile-width-only) {
+      display: block;
+      padding-top: 22px;
+      padding-bottom: 24px;
 
-    &:hover,
-    &:focus {
+      border-top: 1px solid #e6e6e6;
+      background-color: $color-white;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: normal;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .site-list--index & {
+      @media (min-width: $desktop-width) {
+        color: $color-white;
+      }
+    }
+
+    &[href]:hover,
+    &[href]:focus {
       opacity: 0.6;
     }
 
-    &:active {
+    &[href]:active {
       opacity: 0.3;
     }
   }
 
   &--current {
     a {
-      position: relative;
+      @media (min-width: $tablet-width) {
+        position: relative;
+      }
+
+      &::after {
+        @media (min-width: $tablet-width) {
+          content: "";
+
+          position: absolute;
+          right: 0;
+          bottom: -10px;
+          left: 0;
+
+          height: 2px;
+
+          background-color: $color-green;
+        }
+
+        .site-list--index & {
+          @media (min-width: $desktop-width) {
+            background-color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  &:last-child {
+    a {
+      @media (max-width: $mobile-width-only) {
+        border-bottom: 1px solid #e6e6e6;
+      }
     }
   }
 }

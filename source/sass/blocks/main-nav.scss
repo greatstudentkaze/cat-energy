@@ -65,4 +65,9 @@
   }
 }
 
-//.main-nav__list {}
+.main-nav__list {
+
+  .main-nav--opened & {
+    display: flex;
+  }
+}
