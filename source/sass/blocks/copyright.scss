@@ -8,13 +8,28 @@
     flex-basis: 165px;
   }
 
-  //@media (min-width: $desktop-width) {}
-
   b {
     font-family: $font-secondary;
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
     color: $color-dark-gray;
+  }
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $color-green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba($color-green, 0.3);
+    }
+
+    b {
+      opacity: 0.3;
+    }
   }
 }

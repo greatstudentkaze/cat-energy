@@ -1,5 +1,3 @@
-//.social {}
-
 .social__list {
   @include reset-list;
 
@@ -8,8 +6,63 @@
   justify-content: space-between;
   align-items: center;
   width: 130px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+  }
 }
 
-//.social__item {}
+.social__link {
+  display: inline-block;
 
-//.social__link {}
+  &:hover,
+  &:focus {
+    path,
+    circle {
+      fill: $color-green;
+    }
+  }
+
+  &:active {
+    path,
+    circle {
+      fill: rgba($color-green, 0.3);
+    }
+  }
+
+  &--vk {
+    svg {
+      width: 23px;
+      height: 16px;
+
+      @media (min-width: $tablet-width) {
+        width: 30px;
+        height: 22px;
+      }
+    }
+  }
+
+  &--instagram {
+    svg {
+      width: 16px;
+      height: 16px;
+
+      @media (min-width: $tablet-width) {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
+  &--facebook {
+    svg {
+      width: 22px;
+      height: 22px;
+
+      @media (min-width: $tablet-width) {
+        width: 13px;
+        height: 27px;
+      }
+    }
+  }
+}
