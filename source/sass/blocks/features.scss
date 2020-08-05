@@ -51,34 +51,50 @@
   color: $color-dark-gray;
 
   &::before {
-    content: "";
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
 
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 60px;
-    height: 60px;
-
-    background-color: $color-green;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $color-gray;
+    }
   }
 
   &::after {
     content: "";
 
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 0;
+    left: 0;
 
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 
+    background-color: $color-green;
     background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     flex-basis: 250px;
+    min-height: 280px;
     margin-bottom: 0;
+    padding-top: 151px;
+    padding-left: 0;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: 889px) {
@@ -86,7 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 250px;
+    flex-basis: 230px;
   }
 
   &:last-child {
@@ -94,24 +110,48 @@
   }
 
   &--healthy {
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "1";
+      }
+    }
+
     &::after {
       background-image: url("../img/advantage-leaf@1x.png");
     }
   }
 
   &--powder {
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "2";
+      }
+    }
+
     &::after {
       background-image: url("../img/advantage-powder@1x.png");
     }
   }
 
   &--meal {
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "3";
+      }
+    }
+
     &::after {
       background-image: url("../img/advantage-dining@1x.png");
     }
   }
 
   &--time {
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "4";
+      }
+    }
+
     &::after {
       background-image: url("../img/advantage-clock@1x.png");
     }
