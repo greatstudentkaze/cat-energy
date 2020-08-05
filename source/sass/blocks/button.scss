@@ -16,6 +16,15 @@
   background: $color-green;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 26px;
 
@@ -27,5 +36,14 @@
     color: $color-dark-gray;
 
     background-color: $color-gray;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($color-dark-gray, 0.3);
+    }
   }
 }
