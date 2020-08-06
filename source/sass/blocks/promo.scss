@@ -59,7 +59,8 @@
 }
 
 .promo__title {
-  margin: 0;
+  max-width: 250px;
+  margin: 0 auto;
   margin-bottom: 25px;
 
   font-size: 36px;
@@ -76,7 +77,8 @@
 }
 
 .promo__text {
-  margin: 0;
+  max-width: 200px;
+  margin: 0 auto;
   margin-bottom: 29px;
 
   font-size: 14px;
@@ -117,11 +119,11 @@
     display: block;
     width: 280px;
     height: 270px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
       width: 710px;
       height: 610px;
-      margin: 0 auto;
     }
 
     @media (min-width: $desktop-width) {
@@ -132,4 +134,9 @@
   }
 }
 
-//.promo__link {}
+.promo__link {
+  max-width: 280px;
+  width: 100%;
+
+  font-size: 14px;
+}
