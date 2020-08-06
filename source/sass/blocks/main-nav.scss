@@ -5,9 +5,16 @@
     padding-top: 18px;
   }
 
-  &--opened {
+  &--opened,
+  &--nojs {
     .site-list__item {
       display: block;
+    }
+  }
+
+  &--nojs {
+    @media (max-width: $mobile-width-only) {
+      margin-top: 17px;
     }
   }
 }
@@ -72,6 +79,10 @@
       top: 0;
       transform: rotate(-45deg);
     }
+  }
+
+  .main-nav--nojs & {
+    display: none;
   }
 
   @media (min-width: $tablet-width) {
