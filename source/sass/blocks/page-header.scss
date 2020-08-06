@@ -3,8 +3,6 @@
   padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 64px;
     padding-top: 24px;
     padding-bottom: 0;
@@ -13,6 +11,33 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 111px;
     padding-top: 53px;
+  }
+
+  &--index {
+    position: relative;
+
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+
+        width: 100%;
+        min-height: 676px;
+
+        background-image: linear-gradient(to right, $color-white 50%, #64a83b 50%);
+      }
+    }
+  }
+}
+
+.page-header__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
