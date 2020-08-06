@@ -1,6 +1,10 @@
 .main-nav {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
+
   &--opened {
     .site-list__item {
       display: block;
