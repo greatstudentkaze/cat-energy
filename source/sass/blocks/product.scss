@@ -6,7 +6,7 @@
   padding: 19px 20px 25px;
 
   @media (max-width: $mobile-width-only) {
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid $color-gray-special;
     background-color: $color-white;
   }
 

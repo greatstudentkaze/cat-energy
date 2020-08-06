@@ -44,8 +44,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid $color-gray-special;
+    border-bottom: 1px solid $color-gray-special;
   }
 
   @media (min-width: $tablet-width) {
