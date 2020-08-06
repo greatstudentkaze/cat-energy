@@ -22,22 +22,32 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: $color-green;
+    background-color: #64a83b;
 
     @media (min-width: $tablet-width) {
       display: none;
     }
 
     @media (min-width: $desktop-width) {
-      top: 0;
+      top: -225px;
       right: 0;
-      left: auto;
+      left: 50%;
+      z-index: -2;
 
       display: block;
       width: 50%;
       height: 696px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 471px;
+    margin-bottom: 82px;
+  }
+}
+
+.promo__container {
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-height: 810px;
@@ -49,11 +59,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
-
-    min-height: 484px;
-    margin-bottom: 82px;
+    min-height: auto;
     padding: 0 80px;
+    padding-bottom: 185px;
   }
 }
 
@@ -74,6 +82,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .promo__text {
@@ -93,6 +105,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .promo__image {
@@ -107,12 +123,14 @@
     z-index: -1;
 
     width: 100%;
-
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     bottom: 54px;
+    left: 448px;
+
+    width: auto;
   }
 
   img {
