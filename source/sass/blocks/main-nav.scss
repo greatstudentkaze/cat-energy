@@ -1,9 +1,17 @@
-//.main-nav {}
+.main-nav {
+  position: relative;
+
+  &--opened {
+    .site-list__item {
+      display: block;
+    }
+  }
+}
 
 .main-nav__toggle {
   position: absolute;
-  top: 31px;
-  right: 20px;
+  top: -18px;
+  right: 0;
   z-index: 2;
 
   display: block;
@@ -14,6 +22,8 @@
   border: none;
   background-color: $color-black;
   cursor: pointer;
+
+  transition: 0.15s;
 
   &:hover,
   &:focus,
@@ -66,8 +76,18 @@
 }
 
 .main-nav__list {
-
   .main-nav--opened & {
-    display: flex;
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      top: 17px;
+      right: 0;
+      left: 0;
+      z-index: 10;
+
+      // минимальная высота равна одному элементу в навигации
+      min-height: 67px;
+
+      background-color: $color-white;
+    }
   }
 }

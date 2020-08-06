@@ -1,5 +1,6 @@
 .page-header {
-  padding-top: 12px;
+  padding-top: 11px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -18,12 +19,6 @@
 .page-header__logo {
   display: block;
 
-  img {
-    display: block;
-    width: 191px;
-    height: 38px;
-  }
-
   &[href]:hover,
   &[href]:focus {
     opacity: 0.8;
@@ -33,9 +28,14 @@
     opacity: 0.6;
   }
 
+  img {
+    display: block;
+    width: 191px;
+    height: 38px;
+  }
+
   @media (max-width: $mobile-width-only) {
     // ширина ограничена, чтобы ссылка не была под кнопкой меню
     max-width: 80%;
-    padding-bottom: 17px;
   }
 }

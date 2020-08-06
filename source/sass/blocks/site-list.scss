@@ -1,17 +1,14 @@
 .site-list {
   @include reset-list;
 
-  display: flex;
-  flex-direction: column;
-
   @media (max-width: $mobile-width-only) {
-    display: none;
     // делает рамки на всю ширину
     margin: 0 -20px;
   }
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 440px;
     padding-top: 18px;
@@ -23,7 +20,12 @@
 }
 
 .site-list__item {
+  display: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 
   a {
     font-size: 20px;
@@ -51,12 +53,6 @@
     @media (min-width: $desktop-width) {
       font-size: 20px;
       line-height: 30px;
-    }
-
-    .site-list--index & {
-      @media (min-width: $desktop-width) {
-        color: $color-white;
-      }
     }
 
     &[href]:hover,
@@ -103,6 +99,12 @@
       @media (max-width: $mobile-width-only) {
         border-bottom: 1px solid #e6e6e6;
       }
+    }
+  }
+
+  .site-list--index & {
+    @media (min-width: $desktop-width) {
+      color: $color-white;
     }
   }
 }
