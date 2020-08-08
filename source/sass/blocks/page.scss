@@ -16,18 +16,20 @@
 }
 
 .page__wrapper {
-  position: relative;
+  @media (min-width: $desktop-width) {
+    position: relative;
 
-  &::before {
-    content: "";
+    &::before {
+      content: "";
 
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -10;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -10;
 
-    background-image: linear-gradient(to right, #ffffff 50%, #64a83b 50%);
+      background-image: linear-gradient(to right, #ffffff 50%, #64a83b 50%);
+    }
   }
 }
