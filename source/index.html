@@ -7,30 +7,29 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header container">
-      <a class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип «Кэт энерджи»">
-      </a>
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list site-list--index">
-          <li class="site-list__item site-list__item--current">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="plan.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden">Кэт энерджи — функциональное питание для котов</h1>
+  <div class="page__wrapper">
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип «Кэт энерджи»">
+        </a>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list site-list--index">
+            <li class="site-list__item site-list__item--current">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="plan.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <section class="promo">
         <div class="promo__container container">
@@ -42,6 +41,11 @@
           <a class="promo__link button" href="plan.html">Подобрать программу</a>
         </div>
       </section>
+    </header>
+  </div>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Кэт энерджи — функциональное питание для котов</h1>
 
       <section class="diets container">
         <h2 class="visually-hidden">Варианты режима питания</h2>

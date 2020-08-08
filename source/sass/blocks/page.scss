@@ -14,3 +14,20 @@
   background-color: $color-white;
   cursor: default;
 }
+
+.page__wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+
+    background-image: linear-gradient(to right, #ffffff 50%, #64a83b 50%);
+  }
+}
