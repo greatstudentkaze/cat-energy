@@ -21,7 +21,7 @@
 
 .live-example__container {
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: $desktop-content-width;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
