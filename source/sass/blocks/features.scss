@@ -90,7 +90,7 @@
     flex-basis: 250px;
     min-height: 280px;
     margin-bottom: 0;
-    padding-top: 151px;
+    padding-top: 153px;
     padding-left: 0;
 
     font-size: 16px;
@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 230px;
+    flex-basis: 250px;
   }
 
   &:last-child {
@@ -110,6 +110,11 @@
   }
 
   &--healthy {
+    @media (min-width: $desktop-width) {
+      flex-basis: 230px;
+      margin-right: 20px;
+    }
+
     &::before {
       @media (min-width: $tablet-width) {
         content: "1";
@@ -122,6 +127,7 @@
   }
 
   &--powder {
+
     &::before {
       @media (min-width: $tablet-width) {
         content: "2";
@@ -134,6 +140,10 @@
   }
 
   &--meal {
+    @media (min-width: $desktop-width) {
+      flex-basis: 249px;
+    }
+
     &::before {
       @media (min-width: $tablet-width) {
         content: "3";
@@ -146,6 +156,16 @@
   }
 
   &--time {
+    @media (max-width: $mobile-width-only) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 245px;
+    }
+
     &::before {
       @media (min-width: $tablet-width) {
         content: "4";
