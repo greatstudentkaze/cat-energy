@@ -127,7 +127,6 @@
   }
 
   &--powder {
-
     &::before {
       @media (min-width: $tablet-width) {
         content: "2";
