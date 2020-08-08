@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 55px;
+    padding-bottom: 58px;
   }
 
   &::before {
@@ -142,7 +142,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 75px;
     padding-left: 162px;
   }
 }
@@ -172,7 +172,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 467px;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 
   .diet--pro & {
@@ -216,6 +216,10 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
   }
 
   &::after {
