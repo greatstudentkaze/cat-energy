@@ -7,4 +7,9 @@
   color: $color-black;
 
   //&::after {}
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

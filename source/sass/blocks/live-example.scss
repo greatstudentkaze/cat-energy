@@ -21,7 +21,7 @@
 
 .live-example__container {
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: $desktop-content-width;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -106,7 +106,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     background-color: #eaeaea;
   }
 

@@ -13,15 +13,42 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: $color-green;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-right: 124px;
+    padding-left: 78px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 57px;
+    padding-right: 43px;
+    padding-left: 41px;
+    padding-bottom: 42px;
+  }
 }
 
 .gift__image {
   margin: 0;
   margin-bottom: 48px;
-  padding: 6px 11px 12px;
+  //padding: 6px 11px 12px;
+  padding: 6px 10px 12px 14px;
 
   path {
     fill: $color-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -33,4 +60,14 @@
   line-height: 20px;
   color: $color-white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 161px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

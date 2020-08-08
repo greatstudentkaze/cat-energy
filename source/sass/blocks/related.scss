@@ -53,7 +53,7 @@
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
 
-    @media (min-width: 992px) and (max-width: $desktop-width) {
+    @media (min-width: 992px) and (max-width: $desktop-width - 1) {
       border-bottom: none;
     }
   }

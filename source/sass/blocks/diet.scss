@@ -1,37 +1,244 @@
 .diet {
+  position: relative;
+
   padding: 30px 20px 18px;
 
   background-color: $color-gray;
 
-  //&--slim {}
-  //&--pro {}
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 58px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 22px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: $color-green;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      right: 62px;
+      left: auto;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      right: auto;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    .diet--pro & {
+      left: 22.5px;
+
+      @media (min-width: $tablet-width) {
+        top: 91px;
+        right: 60px;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &--slim {
+    &::after {
+      top: 21px;
+      left: 29px;
+
+      width: 36px;
+      height: 50px;
+
+      background-image: url("../img/icon-cat-slim.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 81px;
+        left: auto;
+        right: 92px;
+
+        width: 140px;
+        height: 192px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 67px;
+        right: auto;
+
+        width: 70px;
+        height: 97px;
+      }
+    }
+  }
+
+  &--pro {
+    &::after {
+      top: 35px;
+      left: 13px;
+
+      width: 67px;
+      height: 28px;
+
+      background-image: url("../img/icon-cat-pro.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 135px;
+        left: auto;
+        right: 28px;
+
+        width: 268px;
+        height: 112px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 67px;
+        left: 33px;
+        right: auto;
+
+        width: 134px;
+        height: 56px;
+      }
+    }
+  }
 }
 
 .diet__title {
   margin: 0;
   margin-bottom: 29px;
+  padding-left: 71px;
 
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
   color: $color-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding-left: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+    padding-left: 162px;
+  }
 }
 
 .diet__description {
-  max-width: 227px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 15px;
 
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 18px;
   color: $color-dark-gray;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 23px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 377px;
+    margin-bottom: 48px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 467px;
+    margin-bottom: 26px;
+  }
+
+  .diet--pro & {
+    @media (min-width: $tablet-width) {
+      max-width: 342px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 457px;
+    }
+  }
 }
 
 .diet__link {
+  position: relative;
+
+  padding-right: 49px;
+
   font-size: 16px;
   line-height: 16px;
   color: $color-black;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::after {
+      right: 0;
+      width: 32px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    right: 8px;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+
+    transition: 0.1s;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+    }
+  }
 }

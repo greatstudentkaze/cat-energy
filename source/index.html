@@ -7,40 +7,45 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
+  <div class="page__wrapper">
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип «Кэт энерджи»">
+        </a>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list site-list--index">
+            <li class="site-list__item site-list__item--current">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="plan.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-    <header class="page-header container">
-      <a class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип «Кэт энерджи»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="plan.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <section class="promo">
+        <div class="promo__container container">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+          <p class="promo__image">
+            <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Фото Cat Energy Pro со вкусом курицы">
+          </p>
+          <a class="promo__link button" href="plan.html">Подобрать программу</a>
+        </div>
+      </section>
     </header>
+  </div>
 
     <main class="page-main">
       <h1 class="visually-hidden">Кэт энерджи — функциональное питание для котов</h1>
-
-      <section class="promo container">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__text">Занялся собой? Займись котом!</p>
-        <p class="promo__image">
-          <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Фото Cat Energy Pro со вкусом курицы">
-        </p>
-        <a class="promo__link button" href="plan.html">Подобрать программу</a>
-      </section>
 
       <section class="diets container">
         <h2 class="visually-hidden">Варианты режима питания</h2>
@@ -72,10 +77,10 @@
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
           <li class="features__item features__item--meal">
-            Замените один-два приема обычной еды на наше функциональное питание.Замените один-два приема обычной еды на наше функциональное питание.
+            Замените один-два приема обычной еды на наше функциональное питание.
           </li>
           <li class="features__item features__item--time">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!
           </li>
         </ul>
       </section>
@@ -140,7 +145,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
 
@@ -174,5 +179,6 @@
       </div>
     </footer>
 
+    <script src="js/app.js"></script>
   </body>
 </html>

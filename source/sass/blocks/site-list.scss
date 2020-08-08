@@ -1,14 +1,17 @@
 .site-list {
   @include reset-list;
 
-  display: flex;
-  flex-direction: column;
+  @media (max-width: $mobile-width-only) {
+    // делает рамки на всю ширину
+    margin: 0 -20px;
+  }
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 20px;
     width: 440px;
-    padding-top: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,9 +20,15 @@
 }
 
 .site-list__item {
+  display: none;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   a {
+    display: block;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -27,21 +36,80 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    cursor: pointer;
+    @media (max-width: $mobile-width-only) {
+      display: block;
+      padding-top: 22px;
+      padding-bottom: 24px;
 
-    &:hover,
-    &:focus {
+      border-top: 1px solid #e6e6e6;
+      background-color: $color-white;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 18px;
+      padding-bottom: 8px;
+
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: normal;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &[href]:hover,
+    &[href]:focus {
       opacity: 0.6;
     }
 
-    &:active {
+    &[href]:active {
       opacity: 0.3;
+    }
+
+    .site-list--index & {
+      @media (min-width: $desktop-width) {
+        color: $color-white;
+      }
     }
   }
 
   &--current {
     a {
-      position: relative;
+      @media (min-width: $tablet-width) {
+        position: relative;
+      }
+
+      &::after {
+        @media (min-width: $tablet-width) {
+          content: "";
+
+          position: absolute;
+          right: 0;
+          //bottom: -8px;
+          bottom: 0;
+          left: 0;
+
+          height: 2px;
+
+          background-color: $color-green;
+        }
+
+        .site-list--index & {
+          @media (min-width: $desktop-width) {
+            background-color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  &:last-child {
+    a {
+      @media (max-width: $mobile-width-only) {
+        border-bottom: 1px solid #e6e6e6;
+      }
     }
   }
 }

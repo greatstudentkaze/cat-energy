@@ -1,11 +1,104 @@
-//.main-nav {}
+.main-nav {
+  position: relative;
+
+  &--opened,
+  &--nojs {
+    .site-list__item {
+      display: block;
+    }
+  }
+
+  &--nojs {
+    @media (max-width: $mobile-width-only) {
+      margin-top: 17px;
+    }
+  }
+}
 
 .main-nav__toggle {
   position: absolute;
+  top: -18px;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 24px;
+  height: 2px;
+  padding: 0;
+
+  border: none;
+  background-color: $color-black;
+  cursor: pointer;
+
+  transition: 0.15s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: $color-black;
+    cursor: pointer;
+
+    transition: 0.3s;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    top: 8px;
+  }
+
+  .main-nav--opened & {
+    height: 0;
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav--nojs & {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-//.main-nav__list {}
+.main-nav__list {
+  .main-nav--opened & {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      top: 17px;
+      right: 0;
+      left: 0;
+      z-index: 10;
+
+      // минимальная высота равна одному элементу в навигации
+      min-height: 67px;
+
+      background-color: $color-white;
+    }
+  }
+}

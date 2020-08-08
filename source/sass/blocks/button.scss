@@ -5,6 +5,7 @@
   font: inherit;
   font-size: 16px;
   line-height: 40px;
+  font-weight: normal;
   color: $color-white;
   text-decoration: none;
   text-transform: uppercase;
@@ -15,9 +16,34 @@
   background: $color-green;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 26px;
+
+    font-size: 20px;
+    line-height: 54px;
+  }
+
   &--gray {
     color: $color-dark-gray;
 
     background-color: $color-gray;
+
+    &:hover,
+    &:focus {
+      background-color: $color-gray-special;
+    }
+
+    &:active {
+      color: rgba($color-dark-gray, 0.3);
+    }
   }
 }

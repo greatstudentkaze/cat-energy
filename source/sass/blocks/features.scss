@@ -18,6 +18,10 @@
 
 .features__title {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .features__list {
@@ -34,20 +38,63 @@
 }
 
 .features__item {
+  position: relative;
+
+  max-width: 400px;
+  min-height: 60px;
   margin-bottom: 20px;
+  padding-left: 80px;
 
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 18px;
   color: $color-dark-gray;
 
-  &:last-child {
-    margin-bottom: 0;
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $color-gray;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $color-green;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     flex-basis: 250px;
+    min-height: 280px;
     margin-bottom: 0;
+    padding-top: 153px;
+    padding-left: 0;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: 889px) {
@@ -56,5 +103,76 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 250px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--healthy {
+    @media (min-width: $desktop-width) {
+      flex-basis: 230px;
+      margin-right: 20px;
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "1";
+      }
+    }
+
+    &::after {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
+  }
+
+  &--powder {
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "2";
+      }
+    }
+
+    &::after {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+  }
+
+  &--meal {
+    @media (min-width: $desktop-width) {
+      flex-basis: 249px;
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "3";
+      }
+    }
+
+    &::after {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+  }
+
+  &--time {
+    @media (max-width: $mobile-width-only) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 245px;
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "4";
+      }
+    }
+
+    &::after {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
   }
 }
