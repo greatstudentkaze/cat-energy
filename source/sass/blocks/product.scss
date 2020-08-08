@@ -11,16 +11,18 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     flex-direction: column;
     align-items: center;
-    padding: 36px;
-    padding-bottom: 40px;
+    margin-top: 81px;
+    padding: 161px 36px 40px;
 
-    background-image: linear-gradient(to bottom, $color-white 15.85%, $color-gray 16%, $color-gray 84.15%);
+    background-color: $color-gray;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 1px 30px 40px 35px;
+    padding: 163px 30px 40px 35px;
   }
 }
 
@@ -41,6 +43,7 @@
   line-height: 20px;
   font-weight: normal;
   color: $color-dark-gray-special;
+  text-transform: uppercase;
 
   @media (max-width: $mobile-width-only) {
     br {
@@ -51,7 +54,7 @@
   @media (min-width: $tablet-width) {
     max-width: 180px;
     margin: 0 auto;
-    margin-bottom: 14px;
+    margin-bottom: 17px;
 
     font-size: 20px;
     line-height: 24px;
@@ -118,10 +121,15 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -73px;
+
     margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
+    top: -80px;
+
     margin-bottom: 46px;
   }
 
