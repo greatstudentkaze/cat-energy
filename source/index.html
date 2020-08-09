@@ -40,7 +40,11 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <p class="promo__image">
-            <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Фото Cat Energy Pro со вкусом курицы">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Фото Cat Energy Pro со вкусом курицы">
+            </picture>
           </p>
           <a class="promo__link button" href="plan.html">Подобрать программу</a>
         </div>
