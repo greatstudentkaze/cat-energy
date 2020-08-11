@@ -34,9 +34,14 @@
 
   border: none;
   background-color: transparent;
+
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+  }
 }
 
-.slider__scale {
+.slider__track {
   position: relative;
 
   width: 84px;
@@ -48,13 +53,21 @@
   background-color: $color-white;
 }
 
-.slider__scale-toggle {
+.slider__thumb {
   position: absolute;
 
   width: 35px;
   height: 6px;
+  padding: 0;
 
   border: none;
   border-radius: 6px;
   background-color: $color-green;
+
+  transition: 0.3s;
+
+  &:focus {
+    background-color: darken($color-green, 5%);
+    outline: none;
+  }
 }
