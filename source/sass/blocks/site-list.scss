@@ -29,6 +29,9 @@
 
   a {
     display: block;
+    padding-top: 22px;
+    padding-bottom: 24px;
+
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -36,14 +39,8 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    @media (max-width: $mobile-width-only) {
-      display: block;
-      padding-top: 22px;
-      padding-bottom: 24px;
-
-      border-top: 1px solid #e6e6e6;
-      background-color: $color-white;
-    }
+    border-top: 1px solid #e6e6e6;
+    background-color: $color-white;
 
     @media (min-width: $tablet-width) {
       padding-top: 18px;
@@ -52,6 +49,9 @@
       font-size: 18px;
       line-height: 24px;
       font-weight: normal;
+
+      border-top: none;
+      background-color: transparent;
     }
 
     @media (min-width: $desktop-width) {

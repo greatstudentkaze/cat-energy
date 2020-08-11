@@ -22,6 +22,10 @@
     background-repeat: no-repeat;
     background-color: #64a83b;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -35,6 +39,12 @@
       display: block;
       width: 50%;
       height: 696px;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
