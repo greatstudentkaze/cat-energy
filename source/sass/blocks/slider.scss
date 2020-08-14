@@ -14,7 +14,7 @@
 
     width: 690px;
     height: 517px;
-    margin-bottom: $images-shift;
+    margin-bottom: $images-shift + 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,7 @@
 
     top: $images-shift;
 
-    margin-bottom: $images-shift;
+    margin-bottom: $images-shift + 16px;
   }
 }
 
@@ -81,6 +81,7 @@
 
   transition: 0.3s;
 
+  &:hover,
   &:focus {
     text-decoration: underline;
     outline: none;
@@ -89,8 +90,12 @@
       text-decoration: none;
 
       border-bottom-style: solid;
-      border-bottom-color: $color-black;
+      border-bottom-color: rgba($color-black, 0.4);
     }
+  }
+
+  &:active {
+    border-bottom-color: transparent;
   }
 
   @media (min-width: $tablet-width) {
@@ -133,6 +138,8 @@
   border: none;
   border-radius: 6px;
   background-color: $color-green;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+  cursor: pointer;
 
   transition: 0.3s;
 
@@ -152,19 +159,15 @@
     }
   }
 
+  &:hover,
   &:focus {
-    background-color: darken($color-green, 5%);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
     outline: none;
+  }
 
-    &::before {
-      @media (min-width: $tablet-width) {
-        background-color: darken($color-green, 5%);
-      }
-    }
-
-    @media (min-width: $tablet-width) {
-      background-color: darken($color-white, 5%);
-    }
+  &:active {
+    border-color: $color-green;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
   }
 
   @media (min-width: $tablet-width) {
