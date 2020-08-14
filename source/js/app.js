@@ -23,5 +23,11 @@ sliderToggleBefore.addEventListener('click', () => {
 sliderToggleAfter.addEventListener('click', () => {
   sliderImageBefore.style.display = 'none';
   sliderImageAfter.style.display = 'block';
-  sliderThumb.style.marginLeft = '35px';
+
+  if (window.innerWidth >= 768) {
+    sliderThumb.style.marginLeft = `calc(100% - ${sliderThumb.offsetWidth}px)`;
+  } else {
+    sliderThumb.style.marginLeft = `calc(50% - ${parseFloat(getComputedStyle(sliderTrack).paddingRight)}px)`;
+  }
+
 });
