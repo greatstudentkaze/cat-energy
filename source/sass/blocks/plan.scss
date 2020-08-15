@@ -17,6 +17,41 @@
   }
 }
 
+.plan__columns {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 80px;
+    align-items: center;
+  }
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 282px 180px;
+      gap: 30px 61px;
+      align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 568px 180px;
+      gap: 40px 81px;
+    }
+  }
+
+  &--groups {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 69px;
+    }
+  }
+}
+
 .plan__group {
   margin: 0;
   padding: 0;
@@ -93,9 +128,6 @@
       margin-bottom: 57px;
     }
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .plan__list {
@@ -112,41 +144,6 @@
     @media (min-width: $desktop-width) {
       column-gap: 104px;
       max-width: 1220px;
-    }
-  }
-}
-
-.plan__columns {
-  display: grid;
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px 80px;
-    align-items: center;
-  }
-
-  &--tablet {
-    @media (min-width: $tablet-width) {
-      grid-template-columns: 282px 180px;
-      gap: 30px 61px;
-      align-items: center;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-template-columns: 568px 180px;
-      gap: 40px 81px;
-    }
-  }
-
-  &--groups {
-    margin-bottom: 26px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 75px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 69px;
     }
   }
 }
@@ -213,10 +210,6 @@
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
-
-  }
-
   &--radio {
     margin-left: 45px;
     padding-top: 6px;
@@ -230,9 +223,6 @@
       padding-top: 5px;
       padding-bottom: 5px;
     }
-
-    @media (min-width: $desktop-width) {
-    }
   }
 
   &--checkbox {
@@ -245,9 +235,6 @@
     @media (min-width: $tablet-width) {
       margin-left: 59px;
       padding-bottom: 5px;
-    }
-
-    @media (min-width: $desktop-width) {
     }
   }
 }
@@ -275,10 +262,8 @@
   resize: none;
 
   @media (min-width: $tablet-width) {
+    min-height: 174px;
     padding: 9px 18px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
@@ -346,37 +331,7 @@
   }
 }
 
-.plan__radio {
-  &:hover + .plan__custom-radio,
-  &:focus + .plan__custom-radio {
-    border-color: #bababa;
-  }
-
-  &:checked + .plan__custom-radio::after {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width: 13.5px;
-    height: 13.5px;
-
-    border-radius: 50%;
-    background-color: $color-green;
-
-    transform: translate(-50%, -50%);
-
-    @media (min-width: $tablet-width) {
-      width: 18px;
-      height: 18px;
-    }
-
-    @media (min-width: $desktop-width) {
-
-    }
-  }
-}
+//.plan__radio {}
 
 .plan__custom-radio {
   position: absolute;
@@ -397,34 +352,43 @@
     height: 40px;
   }
 
-  @media (min-width: $desktop-width) {
-
-  }
-}
-
-.plan__checkbox {
-  &:hover + .plan__custom-checkbox,
-  &:focus + .plan__custom-checkbox {
+  .plan__radio:hover + & {
     border-color: #bababa;
   }
 
-  &:checked + .plan__custom-checkbox::after {
+  .plan__radio:focus + & {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px $color-green;
+  }
+
+  .plan__radio:disabled + &,
+  .plan__radio.disabled + & {
+    background-color: $color-gray;
+  }
+
+  .plan__radio:checked + &::after {
     content: "";
 
     position: absolute;
     top: 50%;
     left: 50%;
 
-    width: 21.5px;
-    height: 15.5px;
+    width: 13.5px;
+    height: 13.5px;
 
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-size: 21.1px 15.5px;
+    border-radius: 50%;
+    background-color: $color-green;
 
     transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
+
+//.plan__checkbox {}
 
 .plan__custom-checkbox {
   position: absolute;
@@ -444,7 +408,35 @@
     height: 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  .plan__checkbox:hover + & {
+    border-color: #bababa;
+  }
+
+  .plan__checkbox:focus + & {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px $color-green;
+  }
+
+  .plan__checkbox:disabled + &,
+  .plan__checkbox.disabled + & {
+    background-color: $color-gray;
+  }
+
+  .plan__checkbox:checked + &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 21.5px;
+    height: 15.5px;
+
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 21.1px 15.5px;
+
+    transform: translate(-50%, -50%);
   }
 }
 
