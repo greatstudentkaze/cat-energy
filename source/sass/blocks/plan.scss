@@ -21,35 +21,12 @@
   &--border {
     position: relative;
 
-    padding-top: 22px;
-    padding-bottom: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 22px 20px 20px;
 
-    //border-top: 1px solid #d9d9d9;
-    //border-bottom: 1px solid #d9d9d9;
-
-    //&::before {
-    //  content: "";
-    //
-    //  position: absolute;
-    //  top: 0;
-    //  left: -20px;
-    //
-    //  width: 320px;
-    //
-    //  border-top: 1px solid #d9d9d9;
-    //}
-
-    //&::after {
-    //  content: "";
-    //
-    //  position: absolute;
-    //  bottom: 0;
-    //  left: -20px;
-    //
-    //  width: 320px;
-    //
-    //  border-top: 1px solid #d9d9d9;
-    //}
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 
@@ -107,6 +84,10 @@
 .plan__item {
   margin-bottom: 13px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   .plan__list--checkboxes & {
     &:last-child {
       margin-right: 0;
@@ -122,6 +103,12 @@
       margin-right: 104px;
       margin-bottom: 0;
     }
+  }
+
+  &--input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -141,12 +128,31 @@
 }
 
 .plan__input {
-  padding: 10px 14px;
+  flex-grow: 1;
+  margin-left: 14px;
+  padding: 13px 14px 14px;
 
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $color-dark-gray;
+
+  border: none;
+  outline: none;
+  box-shadow: inset 0 0 0 1px #ececec;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 0 2px $color-dark-gray;
+  }
+
+  &:invalid {
+    box-shadow: inset 0 0 0 2px #ff8282;
+  }
 
   &::placeholder {
     opacity: 1;
