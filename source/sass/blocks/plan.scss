@@ -10,15 +10,27 @@
   }
 }
 
-//.plan__form {}
+.plan__form {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    padding-right: 35px;
+    padding-left: 40px;
+  }
+}
 
 .plan__group {
   margin: 0;
   padding: 0;
-  //padding-bottom: 23px;
   margin-bottom: 27px;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 
   &--border {
     position: relative;
@@ -29,6 +41,18 @@
 
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 24px 27px;
+
+      border-right: 1px solid #d9d9d9;
+      border-left: 1px solid #d9d9d9;
+    }
+
+    @media (min-width: $desktop-width) {
+
+    }
   }
 }
 
@@ -37,6 +61,15 @@
   width: 100%;
   margin-top: 14px;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .plan__list {
@@ -46,10 +79,12 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
+      gap: 32px 123px;
       max-width: 688px;
     }
 
     @media (min-width: $desktop-width) {
+      column-gap: 104px;
       max-width: 1220px;
       margin-bottom: 61px;
     }
@@ -68,7 +103,12 @@
   }
 
   &--padding {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 75px;
+    }
+
     @media (min-width: $desktop-width) {
+      margin-bottom: 0;
       padding-top: 66px;
       padding-bottom: 69px;
     }
@@ -84,6 +124,13 @@
 .plan__item {
   margin-bottom: 13px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -95,12 +142,9 @@
 
     @media (min-width: $tablet-width) {
       flex-basis: 221px;
-      margin-right: 123px;
-      margin-bottom: 32px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 104px;
       margin-bottom: 0;
     }
   }
@@ -113,6 +157,8 @@
 }
 
 .plan__label {
+  position: relative;
+
   display: block;
 
   font-size: 16px;
@@ -122,32 +168,51 @@
 
   transition: 0.15s;
 
-  &:hover,
-  &:focus {
-  }
-
   &:active {
     opacity: 0.3;
   }
 
-  &--radio {
-    position: relative;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
+  @media (min-width: $desktop-width) {
+
+  }
+
+  &--radio {
     margin-left: 45px;
     padding-top: 6px;
     padding-bottom: 6px;
 
     color: $color-dark-gray-special;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
   }
 
   &--checkbox {
-    position: relative;
-
     margin-left: 45px;
     padding-top: 5px;
     padding-bottom: 7px;
 
     color: $color-black;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 59px;
+      padding-bottom: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
   }
 }
 
@@ -157,6 +222,14 @@
   padding: 13px 14px 14px;
 
   @include form-input-styling;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .plan__textarea {
@@ -167,6 +240,13 @@
 
   @include form-input-styling;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 //.plan__input--text {}
@@ -189,6 +269,18 @@
   &--invalid {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 13'%3E%3Cpath fill='%23FF8282' d='M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z'/%3E%3C/svg%3E%0A");
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+
+    background-position: 96.74% 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+
+    background-position: 96.31% 18px;
+  }
 }
 
 .plan__input--tel {
@@ -206,6 +298,19 @@
   &:invalid,
   &--invalid {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23FF8282' d='M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8H6.8v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1A3 3 0 000 2.9V16.8a2.9 2.9 0 002.9 3.1H7.5c.3.1.6-.2.6-.5z'/%3E%3C/svg%3E%0A");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 14px;
+
+    background-position: 97% 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
+
+    background-position: 96.61% 15px;
+
   }
 }
 
@@ -229,6 +334,15 @@
     background-color: $color-green;
 
     transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+    }
   }
 }
 
@@ -243,6 +357,17 @@
   border: 1px solid #cdcdcd;
   border-radius: 50%;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    left: -60px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .plan__checkbox {
@@ -279,6 +404,16 @@
 
   border: 1px solid #cdcdcd;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .plan__submit {
@@ -301,6 +436,8 @@
 
   @media (min-width: $tablet-width) {
     display: inline;
+
+    font-size: 16px;
     text-align: left;
   }
 }
