@@ -19,6 +19,6 @@ sliderToggleAfter.addEventListener('click', () => {
   if (window.innerWidth >= 768) {
     sliderThumb.style.marginLeft = `calc(100% - ${sliderThumb.offsetWidth}px)`;
   } else {
-    sliderThumb.style.marginLeft = `calc(50% - ${parseFloat(getComputedStyle(sliderTrack).paddingRight)}px)`;
+    sliderThumb.style.marginLeft = '36px';
   }
 });
