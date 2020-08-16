@@ -36,23 +36,23 @@
     height: 517px;
   }
 
-  &--before {
-    @media (min-width: $tablet-width) {
-
-    }
-
-    @media (min-width: $desktop-width) {
-    }
-  }
+  //&--before {
+  //  @media (min-width: $tablet-width) {
+  //
+  //  }
+  //
+  //  @media (min-width: $desktop-width) {
+  //  }
+  //}
 
   &--after {
     display: none;
 
-    @media (min-width: $tablet-width) {
-    }
-
-    @media (min-width: $desktop-width) {
-    }
+    //@media (min-width: $tablet-width) {
+    //}
+    //
+    //@media (min-width: $desktop-width) {
+    //}
   }
 }
 
