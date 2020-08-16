@@ -1,0 +1,156 @@
+.option {
+  position: relative;
+
+  display: block;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-dark-gray;
+
+  transition: 0.15s;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--radio {
+     margin-left: 45px;
+     padding-top: 6px;
+     padding-bottom: 6px;
+
+     color: $color-dark-gray-special;
+
+     @media (min-width: $tablet-width) {
+       margin-left: 60px;
+
+       padding-top: 5px;
+       padding-bottom: 5px;
+     }
+   }
+
+  &--checkbox {
+    margin-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+
+    color: $color-black;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 59px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+//.option__input {}
+
+.option__radio {
+  position: absolute;
+  top: 0;
+  left: -46px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    left: -60px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .option__input:hover + & {
+    border-color: #bababa;
+  }
+
+  .option__input:focus + & {
+    border-color: $color-green;
+    box-shadow: 0 0 0 1px $color-green;
+  }
+
+  .option__input:disabled + &,
+  .option__input.disabled + & {
+    background-color: $color-gray;
+  }
+
+  .option__input:checked + &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 13.5px;
+    height: 13.5px;
+
+    border-radius: 50%;
+    background-color: $color-green;
+
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.option__checkbox {
+  position: absolute;
+  top: 0;
+  left: -46px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+  background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .option__input:hover + & {
+    border-color: #bababa;
+  }
+
+  .option__input:focus + & {
+    border-color: $color-green;
+    outline: 1px solid $color-green;
+  }
+
+  .option__input:disabled + &,
+  .option__input.disabled + & {
+    background-color: $color-gray;
+  }
+
+  .option__input:checked + &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 21.5px;
+    height: 15.5px;
+
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 21.1px 15.5px;
+
+    transform: translate(-50%, -50%);
+  }
+}

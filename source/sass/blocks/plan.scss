@@ -190,8 +190,6 @@
 }
 
 .plan__label {
-  position: relative;
-
   display: block;
 
   font-size: 16px;
@@ -208,34 +206,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  &--radio {
-    margin-left: 45px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-
-    color: $color-dark-gray-special;
-
-    @media (min-width: $tablet-width) {
-      margin-left: 60px;
-
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-  }
-
-  &--checkbox {
-    margin-left: 45px;
-    padding-top: 5px;
-    padding-bottom: 7px;
-
-    color: $color-black;
-
-    @media (min-width: $tablet-width) {
-      margin-left: 59px;
-      padding-bottom: 5px;
-    }
   }
 }
 
@@ -328,115 +298,6 @@
     margin-left: 15px;
 
     background-position: 96.61% 15px;
-  }
-}
-
-//.plan__radio {}
-
-.plan__custom-radio {
-  position: absolute;
-  top: 0;
-  left: -46px;
-
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid #cdcdcd;
-  border-radius: 50%;
-  background-color: $color-white;
-
-  @media (min-width: $tablet-width) {
-    left: -60px;
-
-    width: 40px;
-    height: 40px;
-  }
-
-  .plan__radio:hover + & {
-    border-color: #bababa;
-  }
-
-  .plan__radio:focus + & {
-    border-color: $color-green;
-    box-shadow: 0 0 0 1px $color-green;
-  }
-
-  .plan__radio:disabled + &,
-  .plan__radio.disabled + & {
-    background-color: $color-gray;
-  }
-
-  .plan__radio:checked + &::after {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width: 13.5px;
-    height: 13.5px;
-
-    border-radius: 50%;
-    background-color: $color-green;
-
-    transform: translate(-50%, -50%);
-
-    @media (min-width: $tablet-width) {
-      width: 18px;
-      height: 18px;
-    }
-  }
-}
-
-//.plan__checkbox {}
-
-.plan__custom-checkbox {
-  position: absolute;
-  top: 0;
-  left: -46px;
-
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid #cdcdcd;
-  background-color: $color-white;
-
-  @media (min-width: $tablet-width) {
-    left: -59px;
-
-    width: 40px;
-    height: 40px;
-  }
-
-  .plan__checkbox:hover + & {
-    border-color: #bababa;
-  }
-
-  .plan__checkbox:focus + & {
-    border-color: $color-green;
-    box-shadow: 0 0 0 1px $color-green;
-  }
-
-  .plan__checkbox:disabled + &,
-  .plan__checkbox.disabled + & {
-    background-color: $color-gray;
-  }
-
-  .plan__checkbox:checked + &::after {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width: 21.5px;
-    height: 15.5px;
-
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-size: 21.1px 15.5px;
-
-    transform: translate(-50%, -50%);
   }
 }
 
