@@ -158,7 +158,7 @@
 
   @media (max-width: $mobile-width-only) {
     padding-bottom: 23px;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $color-gray-special-border;
   }
 
   @media (min-width: $tablet-width) {

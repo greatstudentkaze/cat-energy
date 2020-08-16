@@ -56,8 +56,8 @@
     padding-top: 19px;
     padding-bottom: 20px;
 
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid $color-gray-special-border;
+    border-bottom: 1px solid $color-gray-special-border;
   }
 
   @media (min-width: $tablet-width) {

@@ -115,7 +115,7 @@
   height: 14px;
   padding: 3px 6px;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-gray-border;
   border-radius: 6px;
   background-color: $color-white;
 
@@ -178,7 +178,7 @@
     width: 34px;
     height: 34px;
 
-    border: 1px solid #cdcdcd;
+    border: 1px solid $color-gray-border;
     border-radius: 50%;
     background-color: $color-white;
   }

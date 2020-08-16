@@ -74,15 +74,14 @@
     margin-left: -20px;
     padding: 20px 20px 21px;
 
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid $color-gray-special-border;
+    border-bottom: 1px solid $color-gray-special-border;
 
     @media (min-width: $tablet-width) {
       margin: 0;
       padding: 24px 27px;
 
-      border-right: 1px solid #d9d9d9;
-      border-left: 1px solid #d9d9d9;
+      border: 1px solid $color-gray-special-border;
     }
   }
 

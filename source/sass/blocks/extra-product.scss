@@ -2,7 +2,7 @@
   padding-top: 13px;
   padding-bottom: 19px;
 
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $color-gray-border;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -11,12 +11,12 @@
     align-items: center;
     padding: 26px 37px 27px 38px;
 
-    border-right: 1px solid #cdcdcd;
-    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid $color-gray-border;
+    border-left: 1px solid $color-gray-border;
   }
 
   @media (min-width: 992px) {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $color-gray-special-border;
   }
 
   @media (min-width: $desktop-width) {

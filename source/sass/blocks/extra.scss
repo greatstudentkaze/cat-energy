@@ -51,7 +51,7 @@
 
 .extra__item {
   &:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $color-gray-border;
 
     @media (min-width: 992px) and (max-width: $desktop-width - 1) {
       border-bottom: none;
