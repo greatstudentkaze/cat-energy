@@ -29,8 +29,8 @@
 
   &:invalid,
   &--invalid {
-    border-color: #ff8282;
-    outline: 1px solid #ff8282;
+    border-color: $color-error;
+    outline: 1px solid $color-error;
   }
 
   &:disabled,

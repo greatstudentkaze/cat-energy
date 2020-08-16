@@ -70,7 +70,7 @@
   }
 
   .option__input:hover + & {
-    border-color: #bababa;
+    border-color: $color-gray-hover;
   }
 
   .option__input:focus + & {
@@ -124,7 +124,7 @@
   }
 
   .option__input:hover + & {
-    border-color: #bababa;
+    border-color: $color-gray-hover;
   }
 
   .option__input:focus + & {

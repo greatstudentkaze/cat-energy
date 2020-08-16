@@ -39,7 +39,7 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid $color-gray-special-2-border;
     background-color: $color-white;
 
     @media (min-width: $tablet-width) {
@@ -108,7 +108,7 @@
   &:last-child {
     a {
       @media (max-width: $mobile-width-only) {
-        border-bottom: 1px solid #e6e6e6;
+        border-bottom: 1px solid $color-gray-special-2-border;
       }
     }
   }

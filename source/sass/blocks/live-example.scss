@@ -2,13 +2,13 @@
   padding-top: 27px;
   padding-bottom: 25px;
 
-  background-color: #eaeaea;
+  background-color: $color-gray-background;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
     padding-bottom: 0;
 
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid $color-gray-special-2-border;
     background-color: $color-white;
   }
 
@@ -21,8 +21,8 @@
 
 .live-example__background {
   @media (min-width: $desktop-width) {
-    background-color: #f2f2f2;
-    background-image: linear-gradient(to right, #f2f2f2 72.6%, #eaeaea 27.4%);
+    background-color: $color-gray;
+    background-image: linear-gradient(to right, $color-gray 72.6%, $color-gray-background 27.4%);
   }
 }
 
@@ -48,7 +48,7 @@
       width: 690px;
       height: 100%;
 
-      background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      background-image: linear-gradient(to right, $color-gray 50%, $color-gray-background 50%);
     }
   }
 }
@@ -180,7 +180,7 @@
   line-height: 1;
   color: $color-dark-gray;
 
-  background-color: #eaeaea;
+  background-color: $color-gray-background;
 
   transform: translateX(-50%);
 
@@ -249,7 +249,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 68px;
 
-    background-color: #eaeaea;
+    background-color: $color-gray-background;
   }
 
   @media (min-width: $desktop-width) {
