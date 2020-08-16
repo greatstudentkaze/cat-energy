@@ -45,7 +45,7 @@
       <h2 class="visually-hidden">Анкета</h2>
       <form class="plan__form" method="post" action="https://echo.htmlacademy.ru">
         <div class="plan__columns plan__columns--groups">
-          <fieldset class="plan__group">
+          <fieldset class="plan__group plan__group--column">
             <legend class="visually-hidden">Данные кота</legend>
             <ul class="plan__list" role="none">
               <li class="plan__item plan__item--input">
@@ -62,24 +62,24 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="plan__group plan__group--border">
+          <fieldset class="plan__group plan__group--column plan__group--border">
             <legend class="visually-hidden">Вариант режима питания</legend>
-            <ul class="plan__list plan__list--radios" role="none">
-              <li class="plan__item">
+            <ul class="plan__list" role="none">
+              <li class="plan__item plan__item--radio">
                 <label class="option option--radio">
                   <input class="option__input visually-hidden" type="radio" name="diet" value="slim" checked>
                   <span class="option__radio"></span>
                   Похудение
                 </label>
               </li>
-              <li class="plan__item">
+              <li class="plan__item plan__item--radio">
                 <label class="option option--radio">
                   <input class="option__input visually-hidden" type="radio" name="diet" value="pro">
                   <span class="option__radio"></span>
                   Набор массы
                 </label>
               </li>
-              <li class="plan__item">
+              <li class="plan__item plan__item--radio">
                 <label class="option option--radio">
                   <input class="option__input visually-hidden" type="radio" name="diet" value="advice">
                   <span class="option__radio"></span>
@@ -114,32 +114,32 @@
         </div>
 
         <fieldset class="plan__group plan__group--extra">
-          <legend class="plan__headline title-special">
+          <legend class="plan__headline plan__headline--extra title-special">
             <span>Дополнительно</span>
           </legend>
           <ul class="plan__list plan__list--checkboxes" role="none">
-            <li class="plan__item">
+            <li class="plan__item plan__item--checkbox">
               <label class="option option--checkbox">
                 <input class="option__input visually-hidden" type="checkbox" name="sugar" checked>
                 <span class="option__checkbox"></span>
                 Сахарозаменитель
               </label>
             </li>
-            <li class="plan__item">
+            <li class="plan__item plan__item--checkbox">
               <label class="option option--checkbox">
                 <input class="option__input visually-hidden" type="checkbox" name="water">
                 <span class="option__checkbox"></span>
                 Питьевая вода
               </label>
             </li>
-            <li class="plan__item">
+            <li class="plan__item plan__item--checkbox">
               <label class="option option--checkbox">
                 <input class="option__input visually-hidden" type="checkbox" name="milk">
                 <span class="option__checkbox"></span>
                 Молоко
               </label>
             </li>
-            <li class="plan__item">
+            <li class="plan__item plan__item--checkbox">
               <label class="option option--checkbox">
                 <input class="option__input visually-hidden" type="checkbox" name="vitamins">
                 <span class="option__checkbox"></span>

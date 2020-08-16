@@ -98,7 +98,7 @@
     }
   }
 
-  .plan__columns & {
+  &--column {
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
@@ -124,7 +124,7 @@
     margin-top: 0;
     margin-bottom: 76px;
 
-    .plan__group--extra & {
+    &--extra {
       margin-bottom: 57px;
     }
   }
@@ -135,15 +135,14 @@
 
   &--checkboxes {
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 221px 221px;
       gap: 32px 123px;
-      max-width: 688px;
     }
 
     @media (min-width: $desktop-width) {
+      grid-template-columns: 221px 221px 221px 221px;
       column-gap: 104px;
-      max-width: 1220px;
     }
   }
 }
@@ -155,26 +154,15 @@
     margin-bottom: 20px;
   }
 
-  .plan__columns--items & {
-    @media (min-width: $desktop-width) {
+  &--checkbox {
+    @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }
 
-  .plan__list--radios & {
+  &--radio {
     @media (min-width: $tablet-width) {
       margin-bottom: 13px;
-    }
-  }
-
-  .plan__list--checkboxes & {
-    &:last-child {
-      margin-right: 0;
-    }
-
-    @media (min-width: $tablet-width) {
-      flex-basis: 221px;
-      margin-bottom: 0;
     }
   }
 
@@ -182,6 +170,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .plan__columns--items & {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   &:last-child {
