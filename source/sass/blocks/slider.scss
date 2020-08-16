@@ -160,14 +160,14 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
-    outline: none;
   }
 
+  &:focus,
   &:active {
     border-color: $color-green;
+    outline: none;
     filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
   }
 
