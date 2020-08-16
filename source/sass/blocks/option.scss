@@ -20,19 +20,19 @@
   }
 
   &--radio {
-     margin-left: 45px;
-     padding-top: 6px;
-     padding-bottom: 6px;
+    margin-left: 45px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 
-     color: $color-dark-gray-special;
+    color: $color-dark-gray-special;
 
-     @media (min-width: $tablet-width) {
-       margin-left: 60px;
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
 
-       padding-top: 5px;
-       padding-bottom: 5px;
-     }
-   }
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
 
   &--checkbox {
     margin-left: 45px;
