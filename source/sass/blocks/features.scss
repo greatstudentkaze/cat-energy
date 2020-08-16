@@ -31,10 +31,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 37px;
   }
-
-  //@media (min-width: $desktop-width) {}
 }
 
 .features__item {
@@ -90,12 +87,16 @@
   @media (min-width: $tablet-width) {
     flex-basis: 250px;
     min-height: 280px;
-    margin-bottom: 0;
+    margin-bottom: 37px;
     padding-top: 153px;
     padding-left: 0;
 
     font-size: 16px;
     line-height: 24px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: 889px) {
@@ -104,6 +105,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 250px;
+    margin-bottom: 0;
   }
 
   &:last-child {
