@@ -11,8 +11,10 @@
   color: $color-dark-gray;
 
   border: 1px solid #e7e7e7;
+  border-radius: 0;
   outline: none;
   background-color: $color-white;
+  box-shadow: none;
 
   &:hover {
     border-color: #cdcdcd;
