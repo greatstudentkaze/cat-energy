@@ -242,13 +242,13 @@
 .plan__input {
   flex-grow: 1;
   margin-left: 14px;
-  padding: 13px 14px 14px;
+  padding: 12px 14px 13px;
 
   @include form-input-styling;
 
   @media (min-width: $tablet-width) {
     margin-left: 16px;
-    padding: 11px 19px;
+    padding: 10px 19px;
   }
 }
 
@@ -357,8 +357,8 @@
   }
 
   .plan__radio:focus + & {
-    border-color: transparent;
-    box-shadow: 0 0 0 2px $color-green;
+    border-color: $color-green;
+    box-shadow: 0 0 0 1px $color-green;
   }
 
   .plan__radio:disabled + &,
@@ -413,8 +413,8 @@
   }
 
   .plan__checkbox:focus + & {
-    border-color: transparent;
-    box-shadow: 0 0 0 2px $color-green;
+    border-color: $color-green;
+    box-shadow: 0 0 0 1px $color-green;
   }
 
   .plan__checkbox:disabled + &,
