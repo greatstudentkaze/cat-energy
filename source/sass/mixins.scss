@@ -10,23 +10,24 @@
   text-transform: uppercase;
   color: $color-dark-gray;
 
-  border: none;
+  border: 1px solid #e7e7e7;
   outline: none;
   background-color: $color-white;
-  box-shadow: inset 0 0 0 1px #ececec;
 
   &:hover {
-    box-shadow: inset 0 0 0 1px #cdcdcd;
+    border-color: #cdcdcd;
   }
 
   &:focus,
   &:active {
-    box-shadow: inset 0 0 0 2px $color-dark-gray;
+    border-color: $color-dark-gray;
+    outline: 1px solid $color-dark-gray;
   }
 
   &:invalid,
   &--invalid {
-    box-shadow: inset 0 0 0 2px #ff8282;
+    border-color: #ff8282;
+    outline: 1px solid #ff8282;
   }
 
   &:disabled,
