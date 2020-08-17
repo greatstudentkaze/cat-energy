@@ -1,15 +1,62 @@
 .title-special {
+  position: relative;
+
   margin: 0;
 
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   font-weight: normal;
   color: $color-black;
 
-  //&::after {}
-
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    line-height: 36px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    z-index: 1;
+
+    width: 100vw;
+    height: 2px;
+
+    background-color: $color-green;
+
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+    }
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+    margin-left: -20px;
+    padding-right: 22px;
+    padding-left: 20px;
+
+    background-color: $color-white;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -37px;
+      padding-right: 36px;
+      padding-left: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -40px;
+      padding-right: 35px;
+      padding-left: 40px;
+    }
   }
 }

@@ -1,4 +1,4 @@
-.related {
+.extra {
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
@@ -6,9 +6,9 @@
   }
 }
 
-//.related__title {}
+//.extra__title {}
 
-.related__wrapper {
+.extra__wrapper {
   padding-top: 35px;
   padding-bottom: 35px;
 
@@ -25,7 +25,7 @@
   }
 }
 
-.related__catalog {
+.extra__catalog {
   @include reset-list;
 
   margin-bottom: 39px;
@@ -49,9 +49,9 @@
   }
 }
 
-.related__item {
+.extra__item {
   &:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $color-gray-border;
 
     @media (min-width: 992px) and (max-width: $desktop-width - 1) {
       border-bottom: none;
@@ -59,7 +59,7 @@
   }
 }
 
-.related__gift {
+.extra__gift {
   @media (min-width: $desktop-width) {
     flex-basis: 245px;
   }

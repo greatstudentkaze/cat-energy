@@ -15,6 +15,11 @@
 .social__link {
   display: inline-block;
 
+  path,
+  circle {
+    fill: #666666;
+  }
+
   &:hover,
   &:focus {
     path,

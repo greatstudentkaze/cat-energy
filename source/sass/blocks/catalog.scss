@@ -1,5 +1,4 @@
 .catalog {
-  padding-top: 8px;
   padding-bottom: 11px;
 
   @media (max-width: $mobile-width-only) {
@@ -9,7 +8,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
-    padding-top: 0;
     padding-bottom: 0;
   }
 

@@ -17,12 +17,12 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 66px;
+    padding-top: 62px;
     padding-right: 72px;
-    padding-bottom: 51px;
+    padding-bottom: 59px;
     padding-left: 71px;
   }
 
@@ -31,18 +31,15 @@
     z-index: 1;
 
     max-width: 570px;
-    padding-top: 66px;
     padding-right: 89px;
-    padding-bottom: 51px;
     padding-left: 76px;
-    height: 201px; // todo добиться такой же паддингами и контентом
 
     background-color: $color-white;
   }
 }
 
 .map__info {
-  flex-basis: 50%;
+  flex-basis: 140px;
   margin: 0;
 
   font-size: 16px;
@@ -51,15 +48,15 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    max-width: 171px;
+    flex-basis: 171px;
 
     font-size: 20px;
-    line-height: 22px;
+    line-height: 25px;
   }
 }
 
 .map__address {
-  flex-basis: 50%;
+  flex-basis: 140px;
   margin: 0;
 
   font-family: $font-secondary;
@@ -67,33 +64,48 @@
   line-height: 20px;
   color: $color-dark-gray;
 
-  @media (min-width: $tablet-width) {
-    max-width: 159px;
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 
+  @media (min-width: $tablet-width) {
+    flex-basis: 159px;
+
+    font-size: 16px;
+    line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
 .map__wrapper {
-  width: 100%;
-  height: 362px;
-
-  @media (min-width: $tablet-width) {
-    height: 396px;
-  }
-
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
     left: 0;
 
-    height: 400px;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .map__image {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 362px;
+
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
 }

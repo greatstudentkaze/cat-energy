@@ -3,3 +3,47 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin form-input-styling {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-dark-gray;
+
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+  outline: none;
+  background-color: $color-white;
+  box-shadow: none;
+  appearance: none;
+
+  &:hover {
+    border-color: $color-gray-border;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $color-dark-gray;
+    outline: 1px solid $color-dark-gray;
+  }
+
+  &:invalid,
+  &--invalid {
+    border-color: $color-error;
+    outline: 1px solid $color-error;
+  }
+
+  &:disabled,
+  &.disabled {
+    background-color: $color-gray;
+  }
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

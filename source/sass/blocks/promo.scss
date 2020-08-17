@@ -20,7 +20,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #64a83b;
+    background-color: $color-green-background;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
@@ -31,7 +31,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -225px;
+      top: -188px;
       right: 0;
       left: 50%;
       z-index: -2;
@@ -70,8 +70,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: auto;
-    padding: 0 100px;
-    padding-bottom: 185px;
+    padding: 37px 100px 185px;
   }
 }
 
