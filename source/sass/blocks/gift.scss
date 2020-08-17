@@ -14,6 +14,10 @@
   background-repeat: no-repeat;
   background-color: $color-green;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -21,6 +25,12 @@
     padding-right: 124px;
     padding-left: 78px;
     padding-bottom: 60px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -30,13 +40,18 @@
     padding-right: 43px;
     padding-left: 41px;
     padding-bottom: 42px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 
 .gift__image {
   margin: 0;
   margin-bottom: 48px;
-  //padding: 6px 11px 12px;
   padding: 6px 10px 12px 14px;
 
   path {
