@@ -202,7 +202,7 @@
     &::after {
       right: 0;
       width: 32px;
-      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 11'%3E%3Cpath d='M25.4 0L32 5.5 25.4 11V6.6H0V4.4h25.4z'/%3E%3C/svg%3E%0A");
     }
   }
 
@@ -232,10 +232,10 @@
     width: 24px;
     height: 11px;
 
-    background-image: url("../img/icon-right-arrow-long.svg");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24.2 11'%3E%3Cpath d='M17.6 0l6.6 5.5-6.6 5.5V6.6H0V4.4h17.6z'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
 
-    transition: 0.1s;
+    transition: 0.15s;
 
     @media (min-width: $tablet-width) {
       top: 14px;
