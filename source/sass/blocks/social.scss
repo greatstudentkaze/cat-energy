@@ -71,3 +71,16 @@
     }
   }
 }
+
+.social__link-icon {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $color-green;
+  }
+
+  &:active {
+    fill: rgba($color-green, 0.3);
+  }
+}
