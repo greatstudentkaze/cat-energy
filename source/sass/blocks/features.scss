@@ -1,8 +1,8 @@
 .features {
-  padding-bottom: 42px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 6px;
     padding-right: 109px;
   }
 
@@ -17,7 +17,7 @@
 }
 
 .features__title {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
@@ -65,7 +65,7 @@
     content: "";
 
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
 
     width: 60px;
@@ -88,7 +88,7 @@
     flex-basis: 250px;
     min-height: 280px;
     margin-bottom: 37px;
-    padding-top: 153px;
+    padding-top: 152px;
     padding-left: 0;
 
     font-size: 16px;
@@ -106,6 +106,7 @@
   @media (min-width: $desktop-width) {
     flex-basis: 250px;
     margin-bottom: 0;
+    padding-top: 153px;
   }
 
   &:last-child {
@@ -121,6 +122,11 @@
     &::before {
       @media (min-width: $tablet-width) {
         content: "1";
+        right: 22px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 0;
       }
     }
 
@@ -137,6 +143,7 @@
     &::before {
       @media (min-width: $tablet-width) {
         content: "2";
+        right: 4px;
       }
     }
 
@@ -183,6 +190,7 @@
     &::before {
       @media (min-width: $tablet-width) {
         content: "4";
+        right: -5px;
       }
     }
 

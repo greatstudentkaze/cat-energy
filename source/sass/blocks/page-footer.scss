@@ -17,8 +17,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 57px;
-    padding-bottom: 58px;
+    padding-top: 60px;
+    padding-bottom: 55px;
   }
 }
 
@@ -52,7 +52,7 @@
   @media (max-width: $mobile-width-only) {
     display: block;
     width: 100%;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     padding-top: 19px;
     padding-bottom: 20px;
 
@@ -62,5 +62,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -5px;
+    margin-left: 18px;
   }
 }

@@ -6,10 +6,11 @@
   background-color: $color-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 53px;
+    padding: 77px 51px 57px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 52px;
     padding-bottom: 58px;
   }
 
@@ -142,14 +143,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 74px;
     padding-left: 162px;
   }
 }
 
 .diet__description {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 
   font-family: $font-secondary;
   font-size: 14px;
@@ -163,7 +164,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 377px;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
 
     font-size: 16px;
     line-height: 24px;
@@ -226,8 +227,8 @@
     content: "";
 
     position: absolute;
-    top: 7px;
-    right: 8px;
+    top: 6px;
+    right: 0;
 
     width: 24px;
     height: 11px;
@@ -239,6 +240,11 @@
 
     @media (min-width: $tablet-width) {
       top: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+      right: 8px;
     }
   }
 }
