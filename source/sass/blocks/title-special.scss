@@ -28,7 +28,7 @@
     transform: translateX(-50%);
 
     @media (min-width: $tablet-width) {
-      top: 22px;
+      top: 21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -48,7 +48,7 @@
     background-color: $color-white;
 
     @media (min-width: $tablet-width) {
-      margin-left: -37px;
+      margin-left: 0;
       padding-right: 36px;
       padding-left: 37px;
     }

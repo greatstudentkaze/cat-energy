@@ -5,7 +5,7 @@
   justify-content: center;
   padding-top: 58px;
   padding-right: 61px;
-  padding-bottom: 43px;
+  padding-bottom: 42px;
   padding-left: 58px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -21,10 +21,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 61px;
     padding-right: 124px;
     padding-left: 78px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
@@ -52,7 +52,7 @@
 .gift__image {
   margin: 0;
   margin-bottom: 48px;
-  padding: 6px 10px 12px 14px;
+  padding: 7px 9px 12px 12px;
 
   path {
     fill: $color-white;
@@ -63,7 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 
