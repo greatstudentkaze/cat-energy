@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы — Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -98,12 +98,16 @@
             <li class="plan__item plan__item--input">
               <label class="plan__label" for="plan-email">E-mail:*</label>
               <input class="plan__input plan__input--email" id="plan-email" type="email" name="email" placeholder="kuklachev@gmail.com">
-              <svg class="plan__input-icon plan__input-icon--email" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" width="18" height="13"><path d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/></svg>
+              <svg class="plan__input-icon plan__input-icon--email" width="18" height="13" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
             </li>
             <li class="plan__item plan__item--input">
               <label class="plan__label plan__label--tel" for="plan-tel">Телефон:*</label>
               <input class="plan__input plan__input--tel" id="plan-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
-              <svg class="plan__input-icon plan__input-icon--tel" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8H6.8v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1A3 3 0 000 2.9V16.8a2.9 2.9 0 002.9 3.1H7.5c.3.1.6-.2.6-.5z"/></svg>
+              <svg class="plan__input-icon plan__input-icon--tel" width="20" height="20" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </li>
           </ul>
         </fieldset>
@@ -189,21 +193,24 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
-              <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 22 12"><path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9s.8-.4 1-.4h3.1l.7.3c.3.2.4.5.5.6.7 1.5 1.5 2.8 2.6 4 .1-.4.2-1.4.1-2.3l-.2-1a.8.8 0 00-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5l1.6.1c1.2.3 1.2 1.3 1.1 2.5v1.6l.1 1c.2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5l-.7.9c-.5.4-.9 1-.9 1.1l.9.9c1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.8-.1zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9l.4-.1-.1-.1c-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1l.7-.8a9 9 0 001.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4l-.4-.1c-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4l-1.4-.1H10l-1.4.1.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3l-.4.1c-.6 0-1.3-.7-2.5-2.5L4.5 1.8l-.1-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4l.2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/></svg>
+            <a class="social__link social__link--vk" href="#" aria-label="Мы в Вконтакте">
+              <svg class="social__link-icon" width="23" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <span class="visually-hidden">Мы в Инстаграме</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.1 16"><path d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2A3.2 3.2 0 011 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2A4.2 4.2 0 000 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/><path d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/><circle cx="12.3" cy="3.7" r=".9"/></svg>
+            <a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме">
+              <svg class="social__link-icon" width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 10 19"><path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2L7 5.8h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/></svg>
+            <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
+              <svg class="social__link-icon" width="22" height="22" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -211,7 +218,7 @@
 
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <b>HTML Academy</b>
-        <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm11.6 25l-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2z"/></svg>
+        <svg width="27" height="34" aria-hidden="true" focusable="false"><path d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm11.6 25l-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2z"/></svg>
       </a>
     </div>
   </footer>
