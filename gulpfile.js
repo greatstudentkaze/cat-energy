@@ -6,7 +6,8 @@ const gulp = require('gulp'),
   autoprefixer = require('autoprefixer'),
   csso = require('gulp-csso'),
   rename = require('gulp-rename'),
-  sync = require('browser-sync').create();
+  sync = require('browser-sync').create(),
+  imagemin = require('gulp-imagemin');
 
 // Styles
 
@@ -53,3 +54,17 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// Images
+
+const images = () => {
+  return gulp.src('source/img/**/*.{jpg,jpeg,png,svg}')
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({progressive:true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest('source/img'))
+}
+
+exports.images = images;
