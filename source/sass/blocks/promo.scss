@@ -128,7 +128,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -2px;
     z-index: -1;
 
     width: 100%;
@@ -137,7 +137,7 @@
 
   @media (min-width: $desktop-width) {
     bottom: 54px;
-    left: 448px;
+    left: 468px;
 
     width: auto;
   }
@@ -169,6 +169,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 54px;
     max-width: 244px;
   }
 }

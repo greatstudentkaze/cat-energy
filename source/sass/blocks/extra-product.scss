@@ -1,6 +1,6 @@
 .extra-product {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 
   border-top: 1px solid $color-gray-border;
 
@@ -33,7 +33,7 @@
 
 .extra-product__title {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   font-size: 16px;
   line-height: 16px;
@@ -70,7 +70,7 @@
     flex-basis: 290px;
     display: grid;
     grid-template-columns: 196px 64px;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
 
     font-size: 16px;
     line-height: 20px;
@@ -82,6 +82,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 286px;
+    margin-top: 7px;
     margin-bottom: 0;
     margin-left: auto;
   }
@@ -104,15 +105,10 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
-
-    font-size: 16px;
-    line-height: 38px;
   }
 
   @media (min-width: $desktop-width) {
     flex-basis: 244px;
     margin-left: 40px;
-
-    line-height: 40px;
   }
 }

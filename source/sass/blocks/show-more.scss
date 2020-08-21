@@ -1,7 +1,7 @@
 .show-more {
   position: relative;
 
-  padding: 79px 20px 25px;
+  padding: 80px 20px 23px;
 
   background-color: $color-white;
 
@@ -74,7 +74,7 @@
   @media (min-width: $tablet-width) {
     max-width: 140px;
     margin: 0 auto;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 
     font-size: 20px;
     line-height: 22px;
@@ -104,9 +104,4 @@
 
 .show-more__link {
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 40px;
-  }
 }

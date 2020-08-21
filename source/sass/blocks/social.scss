@@ -5,10 +5,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 130px;
+  width: 136px;
 
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 120px;
   }
 }
 
@@ -69,5 +73,18 @@
         height: 27px;
       }
     }
+  }
+}
+
+.social__link-icon {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $color-green;
+  }
+
+  &:active {
+    fill: rgba($color-green, 0.3);
   }
 }
