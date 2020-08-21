@@ -7,7 +7,8 @@ const gulp = require('gulp'),
   csso = require('gulp-csso'),
   rename = require('gulp-rename'),
   sync = require('browser-sync').create(),
-  imagemin = require('gulp-imagemin');
+  imagemin = require('gulp-imagemin'),
+  webp = require('gulp-webp');
 
 // Styles
 
@@ -68,3 +69,18 @@ const images = () => {
 }
 
 exports.images = images;
+
+const webpJPGImages = () => {
+  return gulp.src('source/img/**/*.{jpg,jpeg}')
+    .pipe(webp({quality: 95}))
+    .pipe(gulp.dest('source/img'))
+}
+
+const webpPNGImages = () => {
+  return gulp.src('source/img/**/*.{png}')
+    .pipe(webp({lossless: true}))
+    .pipe(gulp.dest('source/img'))
+}
+
+exports.webpJPGImages = webpJPGImages;
+exports.webpPNGImages = webpPNGImages;
