@@ -12,8 +12,12 @@
 
 .plan__form {
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    padding-right: 35px;
-    padding-left: 40px;
+    padding-right: 36px;
+    padding-left: 42px;
+
+    .plan__headline span {
+      margin-left: -39px;
+    }
   }
 }
 
@@ -34,13 +38,13 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: 568px 180px;
+      grid-template-columns: 569px 180px;
       gap: 40px 81px;
     }
   }
 
   &--groups {
-    margin-bottom: 26px;
+    margin-bottom: 27px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 75px;
@@ -72,7 +76,7 @@
 
     margin-right: -20px;
     margin-left: -20px;
-    padding: 20px 20px 21px;
+    padding: 20px 20px 18px;
 
     border-top: 1px solid $color-gray-special-border;
     border-bottom: 1px solid $color-gray-special-border;
@@ -117,7 +121,7 @@
 .plan__headline {
   display: block;
   width: 100%;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -133,10 +137,13 @@
   @include reset-list;
 
   &--checkboxes {
+    margin-top: -1px;
+
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 221px 221px;
       gap: 32px 123px;
+      margin-top: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -149,15 +156,25 @@
 .plan__item {
   position: relative;
 
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
 
   &--checkbox {
+    margin-bottom: 13px;
+
+    &:nth-child(n + 2) {
+      margin-bottom: 12px;
+    }
+
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+
+      &:nth-child(n + 2) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -201,13 +218,17 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &--tel {
+      margin-left: -3px;
+    }
   }
 }
 
 .plan__input {
   flex-grow: 1;
-  margin-left: 14px;
-  padding: 12px 14px 13px;
+  margin-left: 15px;
+  padding: 13px 15px 12px;
 
   @include form-input-styling;
 
@@ -225,15 +246,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 16px;
-    padding: 10px 19px;
+    margin-left: 17px;
+    padding: 10px 18px;
   }
 }
 
 .plan__textarea {
   width: 100%;
   min-height: 150px;
-  padding: 13px 15px;
+  margin-top: 1px;
+  padding: 13px 14px;
   padding-right: 12px;
 
   @include form-input-styling;
@@ -241,7 +263,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 174px;
-    padding: 9px 18px;
+    margin-top: 0;
+    margin-bottom: -2px;
+    padding: 9px 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 18px;
   }
 }
 
@@ -249,10 +277,14 @@
   position: absolute;
 
   &--email {
-    right: 15px;
+    right: 16px;
 
     @media (min-width: $tablet-width) {
       right: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 19px;
     }
   }
 
@@ -265,21 +297,46 @@
   }
 }
 
-//.plan__input--text {}
+.plan__input--text {
+  margin-left: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 17px;
+    padding-left: 19px;
+  }
+}
 
 //.plan__input--number {}
 
+.plan__input--weight {
+  margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
 .plan__input--email {
-  margin-left: 12px;
+  margin-left: 11px;
   padding-right: 40px;
+  padding-left: 14px;
 
   @media (min-width: $tablet-width) {
     margin-left: 18px;
     padding-right: 50px;
+    padding-left: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 20px;
+    margin-left: 22px;
+    padding-left: 17px;
   }
 }
 
@@ -288,12 +345,13 @@
   padding-right: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 14px;
+    margin-left: 16px;
     padding-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 15px;
+    margin-left: 18px;
+    padding-left: 17px;
   }
 }
 
@@ -320,8 +378,13 @@
 
   @media (min-width: $tablet-width) {
     display: inline;
+    margin-top: -4px;
 
     font-size: 16px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
