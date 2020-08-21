@@ -50,17 +50,19 @@
 
   @media (min-width: $tablet-width) {
     max-width: 323px;
+    margin-top: -2px;
     margin-right: 35px;
-    margin-bottom: 37px;
-    margin-left: 40px;
+    margin-bottom: 39px;
+    margin-left: 41px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     margin-right: 0;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
     margin-left: 0;
   }
 }
