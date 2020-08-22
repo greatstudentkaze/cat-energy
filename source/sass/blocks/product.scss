@@ -140,18 +140,18 @@
 
   img {
     display: block;
-    width: 140px;
+    min-width: 140px;
     height: 112px;
     object-fit: cover;
 
     @media (min-width: $tablet-width) {
-      width: 324px;
+      min-width: 324px;
       height: auto;
       max-height: 208px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 245px;
+      min-width: 245px;
       height: auto;
       max-height: 208px;
     }
