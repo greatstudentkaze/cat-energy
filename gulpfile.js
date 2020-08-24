@@ -10,7 +10,8 @@ const gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   webp = require('gulp-webp'),
   svgstore = require('gulp-svgstore'),
-  del = require('del');
+  del = require('del'),
+  htmlmin = require('gulp-htmlmin');
 
 // Styles
 
@@ -89,9 +90,9 @@ const copy = () => {
 
 exports.copy = copy;
 
-// Copy HTML
+// HTML
 
-const html = () => gulp.src('source/*.html', {base: 'source'}).pipe(gulp.dest('build')).pipe(sync.stream());
+const html = () => gulp.src('source/*.html', {base: 'source'}).pipe(htmlmin({ collapseWhitespace: true })).pipe(gulp.dest('build')).pipe(sync.stream());
 
 exports.html = html;
 
