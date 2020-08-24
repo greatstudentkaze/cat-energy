@@ -20,10 +20,13 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    max-width: 900px;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: none;
     margin-bottom: 0;
   }
 
