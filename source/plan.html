@@ -56,11 +56,11 @@
               </li>
               <li class="plan__item plan__item--input">
                 <label class="plan__label" for="plan-weight">Вес (кг):*</label>
-                <input class="plan__input plan__input--weight" id="plan-weight" type="number" name="weight" placeholder="7">
+                <input class="plan__input plan__input--weight" id="plan-weight" type="number" name="weight" placeholder="7" min="0" max="25">
               </li>
               <li class="plan__item plan__item--input">
                 <label class="plan__label" for="plan-age">Возраст (лет):</label>
-                <input class="plan__input plan__input--number" id="plan-age" type="number" name="age" placeholder="7">
+                <input class="plan__input plan__input--number" id="plan-age" type="number" name="age" placeholder="7" min="0" max="25">
               </li>
             </ul>
           </fieldset>
@@ -228,5 +228,6 @@
   </footer>
 
   <script src="js/app.min.js"></script>
+  <script src="js/form.min.js"></script>
 </body>
 </html>
