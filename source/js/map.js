@@ -3,8 +3,6 @@ const viewportWidth = window.innerWidth;
 ymaps.ready(init);
 
 function init(){
-  document.querySelector('.map__wrapper>picture').remove();
-
   const myMap = new ymaps.Map("map", {
     center: viewportWidth >= 1440 ? [59.93881810113662,30.321207767181328] : [59.93863506417266,30.323117499999945],
     zoom: 17
