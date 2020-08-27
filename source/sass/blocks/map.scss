@@ -65,7 +65,7 @@
   color: $color-dark-gray;
 
   @media (max-width: $mobile-width-only) {
-    br {
+    br:last-child {
       display: none;
     }
   }
