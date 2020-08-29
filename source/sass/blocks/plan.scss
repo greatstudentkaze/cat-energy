@@ -315,8 +315,6 @@
   }
 }
 
-//.plan__input--number {}
-
 .plan__input--weight {
   margin-left: 16px;
 
@@ -371,6 +369,33 @@
 
     font-size: 20px;
     line-height: 52px;
+  }
+
+  &--error {
+    animation-name: shake;
+    animation-duration: 0.7s;
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(5px);
+    }
   }
 }
 

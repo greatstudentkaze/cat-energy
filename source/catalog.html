@@ -4,35 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог продукции — Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <div class="page-header__container container">
-      <a class="page-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип «Кэт энерджи»">
-        </picture>
-      </a>
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--current">
-            <a>Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="plan.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <header class="page-header container">
+    <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип «Кэт энерджи»">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--current">
+          <a>Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="plan.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="page-main">
@@ -43,7 +43,7 @@
     <section class="catalog container">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog__list">
-        <li class="catalog__item">
+        <li>
           <article class="product">
             <div class="product__wrapper">
               <h3 class="product__title">
@@ -80,7 +80,7 @@
             <a class="product__link button" href="catalog-item.html">Заказать</a>
           </article>
         </li>
-        <li class="catalog__item">
+        <li>
           <article class="product">
             <div class="product__wrapper">
               <h3 class="product__title">
@@ -117,7 +117,7 @@
             <a class="product__link button" href="catalog-item.html">Заказать</a>
           </article>
         </li>
-        <li class="catalog__item">
+        <li>
           <article class="product">
             <div class="product__wrapper">
               <h3 class="product__title">
@@ -154,7 +154,7 @@
             <a class="product__link button" href="catalog-item.html">Заказать</a>
           </article>
         </li>
-        <li class="catalog__item">
+        <li>
           <article class="product">
             <div class="product__wrapper">
               <h3 class="product__title">
@@ -191,7 +191,7 @@
             <a class="product__link button" href="catalog-item.html">Заказать</a>
           </article>
         </li>
-        <li class="catalog__item">
+        <li>
           <article class="product">
             <div class="product__wrapper">
               <h3 class="product__title">
@@ -228,7 +228,7 @@
             <a class="product__link button" href="catalog-item.html">Заказать</a>
           </article>
         </li>
-        <li class="catalog__item">
+        <li>
           <article class="product">
             <div class="product__wrapper">
               <h3 class="product__title">
@@ -265,7 +265,7 @@
             <a class="product__link button" href="catalog-item.html">Заказать</a>
           </article>
         </li>
-        <li class="catalog__item">
+        <li>
           <article class="product">
             <div class="product__wrapper">
               <h3 class="product__title">
@@ -311,7 +311,7 @@
     </section>
 
     <section class="extra container">
-      <h2 class="extra__title title-special">
+      <h2 class="title-special">
         <span>Дополнительные товары</span>
       </h2>
       <div class="extra__wrapper">
@@ -376,12 +376,12 @@
         <div class="map__description">
           <p class="map__info">Приглашаем к сотрудничеству дилеров!</p>
           <p class="map__address">
-            ул. Большая Конюшенная, д. 19/8 <br> <br>
+            ул. Большая Конюшенная, д.&nbsp;19/8 <br> <br>
             Санкт-Петербург
           </p>
         </div>
       </div>
-      <div class="map__wrapper">
+      <div class="map__wrapper" id="map">
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -433,6 +433,8 @@
     </div>
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="js/app.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7d1767d7-67a8-463f-88af-0adc076dd355&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.min.js"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@
   margin-bottom: 13px;
 
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   font-weight: normal;
   color: $color-dark-gray-special;
   text-transform: uppercase;
@@ -46,7 +46,6 @@
     margin-bottom: 27px;
 
     font-size: 20px;
-    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {

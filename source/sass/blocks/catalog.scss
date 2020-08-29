@@ -25,24 +25,13 @@
     gap: 60px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1080px) {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 63px 80px;
   }
-}
-
-.catalog__item {
-  //margin-bottom: 19px;
-  //
-  //&:last-child {
-  //  margin-bottom: 0;
-  //}
-  //
-  //@media (min-width: $tablet-width) {
-  //  margin-bottom: 0;
-  //}
 }

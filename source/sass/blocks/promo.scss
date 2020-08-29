@@ -80,7 +80,7 @@
   margin-bottom: 25px;
 
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: normal;
 
   @media (min-width: $tablet-width) {
@@ -89,7 +89,6 @@
     margin-bottom: 41px;
 
     font-size: 60px;
-    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,7 +102,7 @@
   margin-bottom: 29px;
 
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -112,7 +111,6 @@
     margin-bottom: 49px;
 
     font-size: 20px;
-    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {

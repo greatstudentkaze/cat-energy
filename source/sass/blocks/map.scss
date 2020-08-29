@@ -65,7 +65,7 @@
   color: $color-dark-gray;
 
   @media (max-width: $mobile-width-only) {
-    br {
+    br:last-child {
       display: none;
     }
   }
@@ -84,6 +84,11 @@
 }
 
 .map__wrapper {
+  position: relative;
+
+  min-width: 320px;
+  height: 362px;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
@@ -95,6 +100,10 @@
 }
 
 .map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   display: block;
   width: 100%;
   height: 362px;
