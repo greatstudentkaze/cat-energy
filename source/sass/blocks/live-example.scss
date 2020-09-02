@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 57px;
 
     border-top: none;
   }
@@ -32,7 +32,7 @@
 
     width: $desktop-content-width;
     margin: 0 auto;
-    padding: 72px 20px 67px;
+    padding: 71px 20px 69px;
     display: flex;
     justify-content: space-between;
 
@@ -43,7 +43,6 @@
       top: 0;
       right: 0;
       z-index: 1;
-
 
       width: 608px;
       height: 100%;
