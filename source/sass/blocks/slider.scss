@@ -12,7 +12,7 @@
 
     width: 690px;
     height: 517px;
-    margin-bottom: $images-shift + 15px;
+    margin-bottom: $images-shift + 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +47,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 590px;
+    max-width: 569px;
     justify-content: space-between;
   }
 
@@ -98,6 +98,10 @@
     font-size: 20px;
     line-height: 31px;
     border-bottom: 1px dotted rgba($color-black, 0.24);
+
+    &--before {
+      margin-left: -2px;
+    }
   }
 }
 

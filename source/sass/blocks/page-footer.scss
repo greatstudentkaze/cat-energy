@@ -60,12 +60,22 @@
     border-bottom: 1px solid $color-gray-special-border;
   }
 
-  //@media (min-width: $tablet-width) {
-  //  margin-bottom: 0;
-  //}
+  @media (min-width: $tablet-width) {
+    margin-left: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: -5px;
     margin-left: 18px;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: $tablet-width) {
+    margin-top: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }

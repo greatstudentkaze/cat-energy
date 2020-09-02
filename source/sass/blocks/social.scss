@@ -11,8 +11,34 @@
     margin: 0 auto;
   }
 
+  @media (min-width: $tablet-width) {
+    width: 121px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 120px;
+  }
+}
+
+.social__item {
+  &:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      margin-top: -1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      margin-top: -2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
   }
 }
 
