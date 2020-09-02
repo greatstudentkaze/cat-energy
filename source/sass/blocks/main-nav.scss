@@ -18,20 +18,33 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -18px;
-  right: 0;
+  top: -32px;
+  right: -3px;
   z-index: 2;
 
   display: block;
-  width: 24px;
-  height: 2px;
+  width: 30px;
+  height: 30px;
   padding: 0;
 
   border: none;
-  background-color: $color-black;
+  background-color: transparent;
   cursor: pointer;
 
-  transition: 0.15s;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 24px;
+    height: 2px;
+
+    background-color: $color-black;
+
+    transition: 0.15s;
+  }
 
   &:hover,
   &:focus,
@@ -45,7 +58,7 @@
     content: "";
 
     position: absolute;
-    left: 0;
+    left: 3px;
 
     width: 24px;
     height: 2px;
@@ -57,23 +70,25 @@
   }
 
   &::before {
-    top: -8px;
+    top: 6px;
   }
 
   &::after {
-    top: 8px;
+    top: 22px;
   }
 
   .main-nav--opened & {
-    height: 0;
+    span {
+      height: 0;
+    }
 
     &::before {
-      top: 0;
+      top: 14px;
       transform: rotate(45deg);
     }
 
     &::after {
-      top: 0;
+      top: 14px;
       transform: rotate(-45deg);
     }
   }
