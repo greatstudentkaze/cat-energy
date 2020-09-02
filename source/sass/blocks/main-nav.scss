@@ -11,6 +11,7 @@
   &--nojs {
     @media (max-width: $mobile-width-only) {
       margin-top: 17px;
+      margin-bottom: -18px;
     }
   }
 }
