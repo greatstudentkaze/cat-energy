@@ -2,7 +2,6 @@
   @include reset-list;
 
   @media (max-width: $mobile-width-only) {
-    // делает рамки на всю ширину
     margin: 0 -20px;
   }
 
