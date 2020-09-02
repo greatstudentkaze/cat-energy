@@ -3,7 +3,7 @@ const viewportWidth = window.innerWidth;
 ymaps.ready(init);
 
 function init(){
-  const myMap = new ymaps.Map("map", {
+  const myMap = new ymaps.Map('map', {
     center: viewportWidth >= 1440 ? [59.93881810113662,30.321207767181328] : [59.93863506417266,30.323117499999945],
     zoom: 17
   });
@@ -18,7 +18,7 @@ function init(){
   }, {
     iconLayout: 'default#image',
     iconImageHref: './img/map-pin.png',
-    iconImageSize: viewportWidth > 767 ? [124, 106] : [62, 53],
+    iconImageSize: viewportWidth > 767 ? [113, 106] : [57, 53],
     iconImageOffset: viewportWidth > 767 ? [-64, -100] : [-32, -55]
   });
   myMap.geoObjects.add(myPlacemark);
