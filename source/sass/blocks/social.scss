@@ -5,13 +5,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 136px;
+  width: 134px;
 
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 120px;
   }
 }

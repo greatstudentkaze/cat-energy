@@ -2,7 +2,7 @@
   width: 320px;
   height: 240px;
   margin: 0 auto;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     $images-shift: -169px;
@@ -84,6 +84,12 @@
 
   &:active {
     border-bottom-color: transparent;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--before {
+      margin-left: 5px;
+    }
   }
 
   @media (min-width: $tablet-width) {

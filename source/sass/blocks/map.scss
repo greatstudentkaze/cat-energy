@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 28px;
+  padding-top: 24px;
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
@@ -47,6 +47,12 @@
   color: $color-black-special;
   text-transform: uppercase;
 
+  @media (max-width: $mobile-width-only) {
+    &::first-line {
+      line-height: 26px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     flex-basis: 171px;
 
@@ -65,6 +71,8 @@
   color: $color-dark-gray;
 
   @media (max-width: $mobile-width-only) {
+    margin-top: 4px;
+
     br:last-child {
       display: none;
     }

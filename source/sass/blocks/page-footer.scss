@@ -24,7 +24,7 @@
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 
   cursor: pointer;
 
@@ -52,17 +52,17 @@
   @media (max-width: $mobile-width-only) {
     display: block;
     width: 100%;
-    margin-bottom: 20px;
-    padding-top: 19px;
-    padding-bottom: 20px;
+    margin-bottom: 22px;
+    padding-top: 21px;
+    padding-bottom: 17px;
 
     border-top: 1px solid $color-gray-special-border;
     border-bottom: 1px solid $color-gray-special-border;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
+  //@media (min-width: $tablet-width) {
+  //  margin-bottom: 0;
+  //}
 
   @media (min-width: $desktop-width) {
     margin-top: -5px;

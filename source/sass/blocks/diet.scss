@@ -1,7 +1,7 @@
 .diet {
   position: relative;
 
-  padding: 30px 20px 18px;
+  padding: 30px 20px 20px;
 
   background-color: $color-gray;
 
@@ -18,7 +18,7 @@
     content: "";
 
     position: absolute;
-    top: 24px;
+    top: 25px;
     left: 22px;
 
     width: 50px;
@@ -93,6 +93,9 @@
   }
 
   &--pro {
+    padding-top: 29px;
+    padding-bottom: 20px;
+
     &::after {
       top: 35px;
       left: 13px;
@@ -125,7 +128,7 @@
 
 .diet__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding-left: 71px;
 
   font-size: 24px;
@@ -133,6 +136,10 @@
   font-weight: normal;
   color: $color-black;
   text-transform: uppercase;
+
+  .diet--pro & {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
@@ -150,7 +157,7 @@
 
 .diet__description {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 
   font-family: $font-secondary;
   font-size: 14px;
@@ -158,8 +165,13 @@
   color: $color-dark-gray;
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 23px;
+    padding-bottom: 22px;
     border-bottom: 1px solid $color-gray-special-border;
+
+    .diet--pro & {
+      margin-bottom: 18px;
+      padding-bottom: 22px;
+    }
   }
 
   @media (min-width: $tablet-width) {
