@@ -89,7 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 171px;
+    width: 170px;
   }
 
   tr {
@@ -111,6 +111,11 @@
 
       font-size: 16px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 7px;
+      padding-bottom: 8px;
+    }
   }
 
   th {
@@ -119,6 +124,10 @@
 
   td {
     text-align: right;
+
+    @media (min-width: $desktop-width) {
+      padding-right: 5px;
+    }
   }
 }
 
