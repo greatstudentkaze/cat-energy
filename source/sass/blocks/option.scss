@@ -35,15 +35,19 @@
   }
 
   &--checkbox {
-    margin-left: 45px;
+    margin-left: 46px;
     padding-top: 5px;
     padding-bottom: 7px;
 
     color: $color-black;
 
     @media (min-width: $tablet-width) {
-      margin-left: 59px;
+      margin-left: 58px;
       padding-bottom: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 59px;
     }
   }
 }
