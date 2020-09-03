@@ -242,7 +242,7 @@
 .plan__input {
   flex-grow: 1;
   margin-left: 15px;
-  padding: 9px 15px 10px;
+  padding: 10px 15px 9px;
 
   @include form-input-styling;
 
@@ -325,7 +325,7 @@
   margin-left: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 15px;
+    margin-left: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -379,13 +379,14 @@
   max-width: 204px;
   margin-left: 9px;
   padding-right: 40px;
-  padding-left: 19px;
+  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     max-width: none;
     margin-right: -2px;
     margin-left: 16px;
     padding-right: 50px;
+    padding-left: 19px;
   }
 
   @media (min-width: $desktop-width) {

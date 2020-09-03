@@ -51,7 +51,9 @@
 
       border-top: none;
       background-color: transparent;
+    }
 
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       .site-list--index & {
         padding-bottom: 10px;
       }

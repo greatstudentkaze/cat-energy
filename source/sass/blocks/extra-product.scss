@@ -45,6 +45,7 @@
   @media (min-width: $tablet-width) {
     flex-basis: 290px;
     margin-bottom: 25px;
+    margin-left: 0;
 
     font-size: 20px;
   }
@@ -52,6 +53,7 @@
   @media (min-width: $desktop-width) {
     flex-basis: 190px;
     margin-bottom: 0;
+    margin-left: 1px;
   }
 }
 
