@@ -11,7 +11,7 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 79px;
+    padding-top: 81px;
     padding-bottom: 76px;
   }
 
@@ -29,7 +29,7 @@
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: 992px) {
@@ -48,6 +48,13 @@
 }
 
 .extra__item {
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      margin-top: -1px;
+      margin-bottom: 1px;
+    }
+  }
+
   &:last-child {
     border-bottom: 1px solid $color-gray-border;
 
