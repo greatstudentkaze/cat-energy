@@ -2,7 +2,6 @@
   @include reset-list;
 
   @media (max-width: $mobile-width-only) {
-    // делает рамки на всю ширину
     margin: 0 -20px;
   }
 
@@ -54,7 +53,16 @@
       background-color: transparent;
     }
 
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      .site-list--index & {
+        padding-bottom: 10px;
+      }
+    }
+
     @media (min-width: $desktop-width) {
+      padding-top: 17px;
+      padding-bottom: 7px;
+
       font-size: 20px;
       line-height: 30px;
     }

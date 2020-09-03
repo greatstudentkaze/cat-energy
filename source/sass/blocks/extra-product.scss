@@ -34,6 +34,7 @@
 .extra-product__title {
   margin: 0;
   margin-bottom: 13px;
+  margin-left: 1px;
 
   font-size: 16px;
   line-height: 1;
@@ -43,7 +44,8 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 290px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+    margin-left: 0;
 
     font-size: 20px;
   }
@@ -51,6 +53,7 @@
   @media (min-width: $desktop-width) {
     flex-basis: 190px;
     margin-bottom: 0;
+    margin-left: 1px;
   }
 }
 
@@ -80,7 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 286px;
+    flex-basis: 289px;
     margin-top: 7px;
     margin-bottom: 0;
     margin-left: auto;
@@ -97,6 +100,11 @@
   @media (min-width: $tablet-width) {
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 44px;
+    text-align: left;
+  }
 }
 
 .extra-product__link {
@@ -108,6 +116,6 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 244px;
-    margin-left: 40px;
+    margin-left: 38px;
   }
 }

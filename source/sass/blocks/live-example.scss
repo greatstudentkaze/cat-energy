@@ -1,11 +1,11 @@
 .live-example {
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 
   background-color: $color-gray-background;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 42px;
     padding-bottom: 0;
 
     border-top: 1px solid $color-gray-special-2-border;
@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 57px;
 
     border-top: none;
   }
@@ -32,7 +32,7 @@
 
     width: $desktop-content-width;
     margin: 0 auto;
-    padding: 72px 20px 67px;
+    padding: 71px 20px 69px;
     display: flex;
     justify-content: space-between;
 
@@ -43,7 +43,6 @@
       top: 0;
       right: 0;
       z-index: 1;
-
 
       width: 608px;
       height: 100%;
@@ -108,7 +107,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 708px;
-    margin-bottom: 53px;
+    margin-bottom: 54px;
 
     font-size: 16px;
     line-height: 24px;
@@ -221,7 +220,7 @@
     flex-basis: 174px;
     margin-top: 11px;
     margin-bottom: 0;
-    margin-right: 2px;
+    margin-right: 1px;
     margin-left: auto;
 
     font-size: 20px;
@@ -256,7 +255,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 67px;
+    padding-bottom: 68px;
 
     background-color: $color-gray-background;
   }

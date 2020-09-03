@@ -5,14 +5,40 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 136px;
+  width: 134px;
 
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    width: 121px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 120px;
+  }
+}
+
+.social__item {
+  &:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      margin-top: -1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      margin-top: -2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -1px;
+    }
   }
 }
 
@@ -21,7 +47,7 @@
 
   path,
   circle {
-    fill: #666666;
+    fill: $color-dark-gray-special-2;
   }
 
   &:hover,
@@ -77,7 +103,7 @@
 }
 
 .social__link-icon {
-  fill: #666666;
+  fill: $color-dark-gray-special-2;
 
   &:hover,
   &:focus {

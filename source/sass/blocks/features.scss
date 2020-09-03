@@ -20,7 +20,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 }
 
@@ -106,7 +106,7 @@
   @media (min-width: 1260px) {
     flex-basis: 250px;
     margin-bottom: 0;
-    padding-top: 153px;
+    padding-top: 151px;
   }
 
   &:last-child {
@@ -122,7 +122,7 @@
     &::before {
       @media (min-width: $tablet-width) {
         content: "1";
-        right: 22px;
+        right: 21px;
       }
 
       @media (min-width: $desktop-width) {
@@ -140,10 +140,22 @@
   }
 
   &--powder {
+    @media (min-width: $tablet-width) {
+      flex-basis: 246px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 251px;
+    }
+
     &::before {
       @media (min-width: $tablet-width) {
         content: "2";
-        right: 4px;
+        right: 1px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 5px;
       }
     }
 
@@ -158,12 +170,13 @@
 
   &--meal {
     @media (min-width: $desktop-width) {
-      flex-basis: 249px;
+      flex-basis: 251px;
     }
 
     &::before {
       @media (min-width: $tablet-width) {
         content: "3";
+        right: 3px;
       }
     }
 
@@ -183,14 +196,18 @@
       }
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       flex-basis: 245px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 246px;
     }
 
     &::before {
       @media (min-width: $tablet-width) {
         content: "4";
-        right: -5px;
+        right: -3px;
       }
     }
 

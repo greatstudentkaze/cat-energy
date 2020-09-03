@@ -23,8 +23,8 @@
     justify-content: space-between;
     padding-top: 61px;
     padding-right: 124px;
-    padding-left: 78px;
     padding-bottom: 58px;
+    padding-left: 78px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
@@ -36,10 +36,10 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     justify-content: center;
-    padding-top: 57px;
+    padding-top: 59px;
     padding-right: 43px;
-    padding-left: 41px;
     padding-bottom: 42px;
+    padding-left: 41px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
@@ -60,10 +60,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
+    padding-left: 14px;
   }
 }
 

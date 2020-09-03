@@ -16,14 +16,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 28px;
+  padding-top: 24px;
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     padding-top: 63px;
-    padding-right: 43px;
+    padding-right: 42px;
     padding-bottom: 58px;
-    padding-left: 40px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +47,12 @@
   color: $color-black-special;
   text-transform: uppercase;
 
+  @media (max-width: $mobile-width-only) {
+    &::first-line {
+      line-height: 26px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     flex-basis: 171px;
 
@@ -65,6 +71,8 @@
   color: $color-dark-gray;
 
   @media (max-width: $mobile-width-only) {
+    margin-top: 4px;
+
     br:last-child {
       display: none;
     }
@@ -88,6 +96,10 @@
 
   min-width: 320px;
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;

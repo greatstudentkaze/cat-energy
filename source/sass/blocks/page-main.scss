@@ -1,6 +1,6 @@
 .page-main__info {
-  padding-top: 27px;
-  padding-bottom: 3px;
+  padding-top: 26px;
+  padding-bottom: 4px;
 
   border-top: 1px solid $color-gray-special-border;
 
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 28px;
+    padding-bottom: 29px;
   }
 }
 
@@ -48,7 +48,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 323px;
-    margin-top: -2px;
+    margin-top: -1px;
     margin-right: 35px;
     margin-bottom: 39px;
     margin-left: 41px;
@@ -62,5 +62,6 @@
     margin-right: 0;
     margin-bottom: 37px;
     margin-left: 0;
+    padding-top: 1px;
   }
 }

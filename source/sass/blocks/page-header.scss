@@ -5,13 +5,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 64px;
+    margin-bottom: 63px;
     padding-top: 24px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
     padding-top: 53px;
   }
 }
@@ -45,7 +45,6 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    // ширина ограничена, чтобы ссылка не была под кнопкой меню
     max-width: 80%;
   }
 }

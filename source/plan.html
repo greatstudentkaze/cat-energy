@@ -18,8 +18,8 @@
       </picture>
     </a>
     <nav class="main-nav main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+        <span></span>
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -57,8 +57,8 @@
                 <input class="plan__input plan__input--weight js-required-input" id="plan-weight" type="number" name="weight" placeholder="7" min="0" max="25">
               </li>
               <li class="plan__item plan__item--input">
-                <label class="plan__label" for="plan-age">Возраст (лет):</label>
-                <input class="plan__input" id="plan-age" type="number" name="age" placeholder="7" min="0" max="25">
+                <label class="plan__label" for="plan-age">Возраст&nbsp;(лет):</label>
+                <input class="plan__input plan__input--age" id="plan-age" type="number" name="age" placeholder="7" min="0" max="25">
               </li>
             </ul>
           </fieldset>
@@ -166,7 +166,7 @@
       <h2 class="visually-hidden">Как нас найти?</h2>
       <div class="container">
         <div class="map__description">
-          <p class="map__info">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__info">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="map__address">
             ул. Большая Конюшенная, д.&nbsp;19/8 <br> <br>
             Санкт-Петербург
@@ -227,7 +227,7 @@
 
   <script src="js/app.min.js"></script>
   <script src="js/form.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=7d1767d7-67a8-463f-88af-0adc076dd355&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7d1767d7-67a8-463f-88af-0adc076dd355&lang=ru_RU"></script>
   <script src="js/map.min.js"></script>
 </body>
 </html>

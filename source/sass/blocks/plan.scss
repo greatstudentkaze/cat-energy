@@ -12,8 +12,8 @@
 
 .plan__form {
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    padding-right: 36px;
-    padding-left: 42px;
+    padding-right: 37px;
+    padding-left: 41px;
 
     .plan__headline span {
       margin-left: -39px;
@@ -76,7 +76,7 @@
 
     margin-right: -20px;
     margin-left: -20px;
-    padding: 20px 20px 18px;
+    padding: 20px 20px 21px;
 
     border-top: 1px solid $color-gray-special-border;
     border-bottom: 1px solid $color-gray-special-border;
@@ -126,8 +126,16 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 76px;
+  }
 
-    &--extra {
+  &--extra {
+    margin-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 58px;
+    }
+
+    @media (min-width: $desktop-width) {
       margin-bottom: 57px;
     }
   }
@@ -179,6 +187,12 @@
   }
 
   &--radio {
+    @media (max-width: $mobile-width-only) {
+      &:nth-child(2) {
+        margin-bottom: 11px;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       margin-bottom: 13px;
     }
@@ -228,7 +242,7 @@
 .plan__input {
   flex-grow: 1;
   margin-left: 15px;
-  padding: 13px 15px 12px;
+  padding: 10px 15px 9px;
 
   @include form-input-styling;
 
@@ -250,7 +264,7 @@
     padding: 10px 18px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 18px;
     padding-left: 16px;
   }
@@ -269,11 +283,14 @@
   @media (min-width: $tablet-width) {
     min-height: 174px;
     margin-top: 0;
-    margin-bottom: -2px;
-    padding: 9px 17px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    padding: 9px 18px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-left: 0;
     padding-left: 18px;
   }
 }
@@ -285,10 +302,12 @@
     right: 16px;
 
     @media (min-width: $tablet-width) {
-      right: 18px;
+      top: 19px;
+      right: 17px;
     }
 
     @media (min-width: $desktop-width) {
+      top: auto;
       right: 19px;
     }
   }
@@ -306,7 +325,7 @@
   margin-left: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 15px;
+    margin-left: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -328,15 +347,26 @@
   }
 }
 
+.plan__input--age {
+  max-width: 172px;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+  }
+}
+
 .plan__input--email {
+  max-width: 219px;
   margin-left: 11px;
   padding-right: 40px;
   padding-left: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 18px;
+    max-width: none;
+    margin-right: -2px;
+    margin-left: 19px;
     padding-right: 50px;
-    padding-left: 21px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -346,12 +376,17 @@
 }
 
 .plan__input--tel {
+  max-width: 204px;
   margin-left: 9px;
   padding-right: 40px;
+  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
+    max-width: none;
+    margin-right: -2px;
     margin-left: 16px;
     padding-right: 50px;
+    padding-left: 19px;
   }
 
   @media (min-width: $desktop-width) {
