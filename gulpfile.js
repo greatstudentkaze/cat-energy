@@ -117,7 +117,7 @@ exports.js = js;
 
 // Build
 
-const build = gulp.series(clean, copy, styles, sprite, html, js);
+const build = gulp.series(clean, images, webpJPGImages, webpPNGImages, copy, styles, sprite, html, js);
 
 exports.build = build;
 
