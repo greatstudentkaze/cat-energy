@@ -25,6 +25,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))
@@ -93,19 +94,30 @@ exports.copy = copy;
 
 // HTML
 
-const html = () => gulp.src('source/*.html', {base: 'source'}).pipe(htmlmin({ collapseWhitespace: true })).pipe(gulp.dest('build')).pipe(sync.stream());
+const html = () => {
+  return gulp.src('source/*.html', {base: 'source'})
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'))
+    .pipe(sync.stream());
+}
 
 exports.html = html;
 
 // JS
 
-const js = () => gulp.src('source/js/**/*.js').pipe(uglify()).pipe(rename({extname: '.min.js'})).pipe(gulp.dest('build/js')).pipe(sync.stream());
+const js = () => {
+  return gulp.src('source/js/**/*.js')
+    .pipe(uglify())
+    .pipe(rename({extname: '.min.js'}))
+    .pipe(gulp.dest('build/js'))
+    .pipe(sync.stream());
+}
 
 exports.js = js;
 
 // Build
 
-const build = gulp.series(clean, copy, styles, sprite, html, js);
+const build = gulp.series(clean, images, webpJPGImages, webpPNGImages, copy, styles, sprite, html, js);
 
 exports.build = build;
 

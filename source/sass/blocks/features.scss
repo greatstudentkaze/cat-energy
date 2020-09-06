@@ -6,7 +6,7 @@
     padding-right: 109px;
   }
 
-  @media (min-width: 889px) {
+  @media (min-width: 845px) {
     padding: 0 30px;
   }
 
@@ -32,6 +32,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: 1260px) {
+    justify-content: flex-start;
+  }
 }
 
 .features__item {
@@ -46,6 +50,54 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 250px;
+    min-height: 280px;
+    margin-bottom: 37px;
+    padding-top: 152px;
+    padding-left: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 845px) {
+    flex-basis: 40%;
+  }
+
+  @media (min-width: 1260px) {
+    flex-basis: 21%;
+    margin-right: 50px;
+    margin-bottom: 0;
+    padding-top: 151px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(1n) {
+      flex-basis: 230px;
+      margin-right: 94px;
+    }
+
+    &:nth-child(2n) {
+      flex-basis: 246px;
+      margin-right: 79px;
+    }
+
+    &:nth-child(3n) {
+      flex-basis: 248px;
+      margin-right: 77px;
+    }
+
+    &:nth-child(4n) {
+      flex-basis: 246px;
+      margin-right: 0;
+    }
+  }
 
   &::before {
     @media (min-width: $tablet-width) {
@@ -84,48 +136,14 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    flex-basis: 250px;
-    min-height: 280px;
-    margin-bottom: 37px;
-    padding-top: 152px;
-    padding-left: 0;
-
-    font-size: 16px;
-    line-height: 24px;
-
-    &:nth-last-child(-n+2) {
-      margin-bottom: 0;
-    }
-  }
-
-  @media (min-width: 889px) {
-    flex-basis: 400px;
-  }
-
-  @media (min-width: 1260px) {
-    flex-basis: 250px;
-    margin-bottom: 0;
-    padding-top: 151px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &--healthy {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: 844px) {
       flex-basis: 230px;
-      margin-right: 20px;
     }
 
     &::before {
       @media (min-width: $tablet-width) {
         content: "1";
-        right: 21px;
-      }
-
-      @media (min-width: $desktop-width) {
         right: 0;
       }
     }
@@ -140,12 +158,8 @@
   }
 
   &--powder {
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: 844px) {
       flex-basis: 246px;
-    }
-
-    @media (min-width: $desktop-width) {
-      flex-basis: 251px;
     }
 
     &::before {
@@ -155,7 +169,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        right: 5px;
+        right: 0;
       }
     }
 
@@ -169,14 +183,18 @@
   }
 
   &--meal {
-    @media (min-width: $desktop-width) {
-      flex-basis: 251px;
+    @media (min-width: $tablet-width) and (max-width: 844px) {
+      flex-basis: 248px;
     }
 
     &::before {
       @media (min-width: $tablet-width) {
         content: "3";
         right: 3px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 1px;
       }
     }
 
@@ -196,12 +214,8 @@
       }
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: 844px) {
       flex-basis: 245px;
-    }
-
-    @media (min-width: $desktop-width) {
-      flex-basis: 246px;
     }
 
     &::before {
@@ -218,5 +232,13 @@
         background-image: url("../img/advantage-clock@2x.png");
       }
     }
+  }
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

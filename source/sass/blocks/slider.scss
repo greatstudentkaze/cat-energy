@@ -10,9 +10,12 @@
     position: relative;
     top: $images-shift;
 
+    display: flex;
     width: 690px;
     height: 517px;
+    margin-right: 16px;
     margin-bottom: $images-shift + 14px;
+    margin-left: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,22 +23,69 @@
 
     top: $images-shift;
 
+    margin-right: 0;
     margin-bottom: $images-shift + 35px;
+    margin-left: -2px;
   }
 }
 
 .slider__image {
-  display: block;
-  width: 320px;
-  height: 240px;
-
   @media (min-width: $tablet-width) {
-    width: 690px;
-    height: 517px;
+    position: relative;
+    width: 50%;
+
+    overflow: hidden;
+  }
+
+  img {
+    display: block;
+    width: 320px;
+    height: 240px;
+    max-width: none;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+
+      width: 690px;
+      height: 517px;
+    }
+  }
+
+  &--before {
+    @media (min-width: $tablet-width) {
+      width: 49%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 53%;
+    }
+
+    img {
+      @media (min-width: $tablet-width) {
+        left: 0;
+      }
+    }
   }
 
   &--after {
-    display: none;
+    @media (min-width: $tablet-width) {
+      width: 51%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 47%;
+    }
+
+    img {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        right: 0;
+
+        display: block;
+      }
+    }
   }
 }
 
@@ -119,6 +169,7 @@
   @media (min-width: $tablet-width) {
     width: 428px;
     height: 6px;
+    margin-left: 6px;
     padding: 0;
 
     border: none;
@@ -170,6 +221,7 @@
 
   @media (min-width: $tablet-width) {
     top: -14px;
+    left: 50%;
 
     display: block;
     width: 34px;
@@ -178,5 +230,7 @@
     border: 1px solid $color-gray-border;
     border-radius: 50%;
     background-color: $color-white;
+
+    transform: translateX(-50%);
   }
 }

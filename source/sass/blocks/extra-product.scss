@@ -94,6 +94,11 @@
   @media (min-width: $tablet-width) {
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 135px;
+    text-align: left;
+  }
 }
 
 .extra-product__price {

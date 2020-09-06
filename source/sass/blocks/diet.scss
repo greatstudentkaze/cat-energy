@@ -6,12 +6,12 @@
   background-color: $color-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 76px 52px 57px;
+    padding: 76px 52px 53px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 52px;
-    padding-bottom: 58px;
+    padding-bottom: 54px;
   }
 
   &::before {
@@ -152,6 +152,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 377px;
     margin-bottom: 25px;
     padding-left: 1px;
 
@@ -160,6 +161,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 466px;
     margin-bottom: 74px;
     padding-left: 162px;
   }
@@ -186,7 +188,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 377px;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
 
     font-size: 16px;
     line-height: 24px;
@@ -195,7 +197,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 467px;
-    margin-bottom: 27px;
+    margin-bottom: 23px;
   }
 
   .diet--pro & {
@@ -234,7 +236,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: inline-block;
+    max-width: 377px;
     padding-top: 4px;
+    padding-right: 57px;
     padding-bottom: 4px;
 
     font-size: 20px;
@@ -242,6 +247,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 466px;
     padding-right: 60px;
   }
 
