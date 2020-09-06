@@ -10,6 +10,7 @@
     position: relative;
     top: $images-shift;
 
+    display: flex;
     width: 690px;
     height: 517px;
     margin-bottom: $images-shift + 14px;
@@ -25,17 +26,48 @@
 }
 
 .slider__image {
-  display: block;
-  width: 320px;
-  height: 240px;
-
   @media (min-width: $tablet-width) {
-    width: 690px;
+    width: 345px;
     height: 517px;
+
+    overflow: hidden;
+  }
+
+  img {
+    display: block;
+    width: 320px;
+    height: 240px;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      //width: 690px;
+      //height: 517px;
+      width: 690px;
+      height: 100%;
+    }
+  }
+
+  &--before {
+    img {
+      @media (min-width: $tablet-width) {
+        left: 0;
+      }
+    }
   }
 
   &--after {
-    display: none;
+    img {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        right: 0;
+
+        display: block;
+      }
+    }
   }
 }
 
