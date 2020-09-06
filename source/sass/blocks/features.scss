@@ -84,35 +84,6 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    flex-basis: 250px;
-    min-height: 280px;
-    margin-bottom: 37px;
-    padding-top: 152px;
-    padding-left: 0;
-
-    font-size: 16px;
-    line-height: 24px;
-
-    &:nth-last-child(-n+2) {
-      margin-bottom: 0;
-    }
-  }
-
-  @media (min-width: 889px) {
-    flex-basis: 400px;
-  }
-
-  @media (min-width: 1260px) {
-    flex-basis: 250px;
-    margin-bottom: 0;
-    padding-top: 151px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &--healthy {
     @media (min-width: $desktop-width) {
       flex-basis: 230px;
@@ -218,5 +189,34 @@
         background-image: url("../img/advantage-clock@2x.png");
       }
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 250px;
+    min-height: 280px;
+    margin-bottom: 37px;
+    padding-top: 152px;
+    padding-left: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 889px) {
+    flex-basis: 400px;
+  }
+
+  @media (min-width: 1260px) {
+    flex-basis: 250px;
+    margin-bottom: 0;
+    padding-top: 151px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
