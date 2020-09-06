@@ -350,7 +350,7 @@
 .plan__input--age {
   max-width: 172px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 340px) {
     max-width: none;
   }
 }
@@ -361,8 +361,11 @@
   padding-right: 40px;
   padding-left: 14px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 340px) {
     max-width: none;
+  }
+
+  @media (min-width: $tablet-width) {
     margin-right: -2px;
     margin-left: 19px;
     padding-right: 50px;
@@ -381,8 +384,11 @@
   padding-right: 40px;
   padding-left: 15px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 340px) {
     max-width: none;
+  }
+
+  @media (min-width: $tablet-width) {
     margin-right: -2px;
     margin-left: 16px;
     padding-right: 50px;
