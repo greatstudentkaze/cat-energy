@@ -67,5 +67,6 @@
 .extra__gift {
   @media (min-width: $desktop-width) {
     flex-basis: 245px;
+    flex-shrink: 0;
   }
 }
