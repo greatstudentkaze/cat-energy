@@ -138,13 +138,18 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 295px;
+    top: -78px;
+
+    width: 324px;
+    height: 208px;
 
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 303px;
+    top: -87px;
+
+    width: 245px;
   }
 
   img {
@@ -154,6 +159,9 @@
     object-fit: cover;
 
     @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+
       min-width: 324px;
       height: auto;
       max-height: 208px;
