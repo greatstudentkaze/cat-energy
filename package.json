@@ -1,6 +1,7 @@
 {
   "name": "cat-energy-20",
   "private": true,
+  "type": "module",
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
@@ -17,9 +18,7 @@
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "2.6.5",
     "gulp-svgstore": "^7.0.1",
-    "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
-    "readable-stream": "^3.6.0",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -47,6 +46,10 @@
     "node": "12.18.2"
   },
   "dependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "gulp-babel": "^8.0.0",
+    "gulp-terser": "^2.0.0",
     "normalize.css": "^8.0.1"
   }
 }
