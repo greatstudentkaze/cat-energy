@@ -4,11 +4,11 @@
   "type": "module",
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "9.8.4",
     "browser-sync": "^2.26.13",
     "del": "^5.1.0",
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -19,7 +19,7 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "stylelint": "13.6.1",
+    "stylelint": "^13.9.0",
     "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
